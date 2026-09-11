@@ -8,7 +8,7 @@ Beginner-friendly workshop: use a small AI team to draft a Hong Kong day trip, c
 - [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
 - [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.1.json)
 
-**Status: pilot draft.** Live execution of the new travel template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
+**Validation status: pre-release.** Live execution of the new travel template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
 
 ## What participants do
 
@@ -21,7 +21,7 @@ No GitHub account, Git or local development setup is needed to read the website.
 
 ## Maintaining the guide
 
-The default guide is eight separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing.
+The default guide is eight separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
 
 Edit the English and Korean step text in `docs/_includes/steps/en/` and `docs/_includes/steps/ko/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md`, `docs/ko.md` and `docs/en/step-*.md` / `docs/ko/step-*.md` select each page; they do not duplicate the lesson content.
 

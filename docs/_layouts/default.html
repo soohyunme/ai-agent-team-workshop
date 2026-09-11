@@ -32,7 +32,7 @@
   <div class="page-shell">
     <aside class="sidebar">
       <p class="eyebrow">HONG KONG · 90 MIN</p>
-      <p class="sidebar-title">{% if language == 'ko' %}작은 팀 하나,<br>내 취향대로.{% else %}One small team.<br>Make it yours.{% endif %}</p>
+      <p class="sidebar-title">{% if language == 'ko' %}멀티 에이전트<br>실습 가이드{% else %}Multi-agent<br>workshop guide{% endif %}</p>
       <nav aria-label="{% if language == 'ko' %}실습 순서{% else %}Workshop steps{% endif %}">
         <ol class="step-list">
           {% for item in steps %}
@@ -40,20 +40,22 @@
           {% endfor %}
         </ol>
         <a class="help-link" href="{{ full_url | relative_url }}"{% if page.full %} aria-current="page"{% endif %}>{% if language == 'ko' %}전체 보기 · 인쇄{% else %}Full guide · Print{% endif %}</a>
-        <a class="help-link" href="{{ full_url | relative_url }}#help">{% if language == 'ko' %}막혔을 때{% else %}Need help?{% endif %}</a>
-        <a class="help-link" href="{{ full_url | relative_url }}#timing">{% if language == 'ko' %}테스트 시간 기록{% else %}Record test time{% endif %}</a>
+        <a class="help-link" href="{{ full_url | relative_url }}#help">{% if language == 'ko' %}문제 해결{% else %}Troubleshooting{% endif %}</a>
+        <a class="help-link" href="{{ full_url | relative_url }}#timing">{% if language == 'ko' %}실습 돌아보기{% else %}Reflect on the exercise{% endif %}</a>
       </nav>
       <a class="download" href="{{ '/assets/templates/hong-kong-day-trip-team-starter-v0.1.json' | relative_url }}" download>{% if language == 'ko' %}여행 템플릿 다운로드{% else %}Download template{% endif %}<span>JSON · v0.1</span></a>
       <p class="small">{% if language == 'ko' %}가입·연결 후 4단계에서 Sim에 불러오세요.{% else %}Import into Sim in step 4, after connecting your account.{% endif %}</p>
     </aside>
     <main id="main" tabindex="-1">
+      {% if page.step == 1 or page.full %}
       <div class="draft-note">
-        <strong>{% if language == 'ko' %}테스트 중인 초안{% else %}Pilot draft{% endif %}</strong>
-        <p>{% if language == 'ko' %}현지 접속과 새 여행 팀의 실행 검증은 아직 남아 있습니다. 걸린 시간과 막힌 부분을 기록해주세요.{% else %}Local access and live execution of the new travel team still need verification. Note your time and any difficulties.{% endif %}</p>
+        <strong>{% if language == 'ko' %}자료 상태 안내{% else %}Materials status{% endif %}</strong>
+        <p>{% if language == 'ko' %}이 자료는 사전 검토본입니다. 여행 템플릿의 실행과 현지 접속 확인은 아직 완료되지 않았습니다.{% else %}These materials are a pre-release version. Live execution of the travel template and local access have not yet been verified.{% endif %}</p>
       </div>
+      {% endif %}
       {% if page.full %}
       <h1>{% if language == 'ko' %}전체 실습 가이드{% else %}The complete workshop guide{% endif %}</h1>
-      <p>{% if language == 'ko' %}검토·인쇄용입니다. 한 단계씩 진행하려면 왼쪽 단계 목록에서 선택하세요.{% else %}For review and printing. For one step at a time, choose a page from the step list.{% endif %}</p>
+      <p>{% if language == 'ko' %}모든 단계를 한 페이지에서 읽거나 인쇄할 수 있습니다. 단계별로 진행하려면 단계 목록에서 원하는 페이지를 선택하세요.{% else %}Read or print all steps on one page. To follow the exercise one step at a time, choose a page from the step list.{% endif %}</p>
       {% else %}
       <p class="step-progress">{% if language == 'ko' %}8단계 중 {{ page.step }}단계{% else %}Step {{ page.step }} of 8{% endif %}</p>
       {% endif %}
@@ -62,11 +64,11 @@
           {% assign info = item[language] %}
           <section aria-labelledby="step-{{ item.id }}">
             {% if page.full %}<h2 id="step-{{ item.id }}">{{ item.id }}. {{ info.title }}</h2>{% else %}<h1 id="step-{{ item.id }}">{{ info.title }}</h1>{% endif %}
-            <div class="step-goal"><strong>{% if language == 'ko' %}이번 단계에서 할 일{% else %}Your task{% endif %}</strong><p>{{ info.goal }}</p></div>
+            <div class="step-goal"><strong>{% if language == 'ko' %}이번 단계에서 할 일{% else %}In this step{% endif %}</strong><p>{{ info.goal }}</p></div>
             {% capture step_file %}steps/{{ language }}/{{ item.id }}.md{% endcapture %}
             {% capture step_body %}{% include {{ step_file }} %}{% endcapture %}
             {{ step_body | markdownify }}
-            <div class="completion"><strong>{% if language == 'ko' %}완료 확인{% else %}Before you continue{% endif %}</strong><p>{{ info.check }}</p></div>
+            <div class="completion"><strong>{% if item.id == 8 %}{% if language == 'ko' %}실습을 마치기 전에{% else %}Check before finishing{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
           </section>
         {% endfor %}
         {% if page.full %}
@@ -87,13 +89,12 @@
           {% assign next_step = steps[next_index] %}
           <a class="page-button next" rel="next" href="{{ next_step[language].url | relative_url }}"><span>{% if language == 'ko' %}다음{% else %}Next{% endif %} →</span>{{ next_step[language].title }}</a>
         {% else %}
-          <a class="page-button next" href="{{ full_url | relative_url }}#timing"><span>{% if language == 'ko' %}실습 마무리{% else %}Finish the exercise{% endif %} →</span>{% if language == 'ko' %}걸린 시간과 어려웠던 점 기록{% else %}Record your time and feedback{% endif %}</a>
+          <a class="page-button next" href="{{ full_url | relative_url }}#timing"><span>{% if language == 'ko' %}실습 마무리{% else %}Complete the workshop{% endif %} →</span>{% if language == 'ko' %}배운 내용 정리하기{% else %}Reflect on what you learned{% endif %}</a>
         {% endif %}
       </nav>
       {% endif %}
       <footer>
-        <p>Soohyun Kim · Pseudo Lab × PolyU · September 2026</p>
-        <p>{% if language == 'ko' %}개인 API 키를 이 페이지나 공개 저장소에 입력하지 마세요.{% else %}Never put your private API key on this page or in a public repository.{% endif %}</p>
+        <p>Soohyun Kim · Pseudo Lab × PolyU</p>
         <a href="https://github.com/soohyunme/ai-agent-team-workshop">{% if language == 'ko' %}자료 저장소{% else %}Source repository{% endif %}</a>
       </footer>
     </main>
