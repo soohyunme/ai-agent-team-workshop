@@ -16,7 +16,7 @@ a:focus-visible { outline: 3px solid #b15c14; outline-offset: 4px; border-radius
 .skip-link:focus { top: 1rem; }
 .site-header { max-width: 1240px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); }
 .brand { text-decoration: none; font-size: .95rem; font-weight: 800; letter-spacing: .08em; }
-.brand span { font-weight: 400; }
+.brand span { display: block; font-size: .7rem; font-weight: 500; letter-spacing: .06em; }
 .site-header nav { display: flex; gap: 1rem; font-size: .9rem; }
 .site-header [aria-current] { font-weight: 750; text-decoration-thickness: 2px; }
 .page-shell { max-width: 1240px; margin: auto; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 4rem; padding: 2.5rem 2rem 4rem; }
@@ -26,7 +26,19 @@ a:focus-visible { outline: 3px solid #b15c14; outline-offset: 4px; border-radius
 .sidebar ol { padding-left: 1.4rem; margin-bottom: 1rem; font-size: .9rem; }
 .sidebar li { margin: .7rem 0; padding-left: .2rem; }
 .sidebar li::marker { color: var(--muted); }
-.sidebar li a { text-decoration: none; }
+.sidebar li a { display: block; text-decoration: none; padding: .2rem .35rem; border-radius: 4px; }
+.sidebar li a[aria-current="step"] { background: #dcece2; color: #123e33; font-weight: 750; border-left: 3px solid var(--green); }
+.step-progress { color: var(--green); font-weight: 750; font-size: .9rem; margin-top: 1.6rem; }
+.step-goal, .completion { padding: 1rem 1.25rem; border-radius: 8px; margin: 1.25rem 0; }
+.step-goal { background: #edf2ed; }
+.completion { border: 1px solid #a3c6b2; background: #f0f7f0; margin-top: 2rem; }
+.step-goal p, .completion p { margin: .3rem 0 0; }
+.pagination { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+.page-button { display: block; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; text-decoration: none; font-size: .9rem; line-height: 1.5; overflow-wrap: anywhere; }
+.page-button span { display: block; font-weight: 750; margin-bottom: .4rem; }
+.page-button.next { grid-column: 2; background: var(--green); color: white; }
+.page-button.previous { grid-column: 1; }
+
 .help-link { display: block; margin: .5rem 0; font-size: .85rem; }
 .download { display: block; padding: .85rem 1rem; margin-top: 1.7rem; background: var(--green); color: white; border-radius: 8px; text-decoration: none; font-size: .9rem; font-weight: 650; }
 .download span { display: block; font-size: .75rem; font-weight: 400; }
@@ -66,7 +78,7 @@ footer p { margin: .4rem 0; }
   .site-header nav { gap: .6rem; }
 }
 @media print {
-  .site-header, .sidebar, .skip-link { display: none; }
+  .site-header, .sidebar, .skip-link, .pagination { display: none; }
   .page-shell { display: block; padding: 0; }
   body { background: white; font-size: 11pt; }
   main { max-width: none; }

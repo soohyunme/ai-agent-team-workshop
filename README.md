@@ -1,9 +1,11 @@
-# AI Agent Team Workshop
+# AI Agent Hands-On Workshop
 
 Beginner-friendly workshop: use a small AI team to draft a Hong Kong day trip, change your interests and instructions, and reuse the team.
 
 - [English guide](https://soohyunme.github.io/ai-agent-team-workshop/)
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
+- [Full English guide](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
+- [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
 - [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.1.json)
 
 **Status: pilot draft.** Live execution of the new travel template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
@@ -19,9 +21,11 @@ No GitHub account, Git or local development setup is needed to read the website.
 
 ## Maintaining the guide
 
-The published English and Korean sources are `docs/index.md` and `docs/ko.md`. Update both when changing the exercise. These are the source of truth for the public guide.
+The default guide is eight separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing.
 
-The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The Markdown guides are wrapped in Liquid raw tags so that this literal placeholder remains visible after the Pages build.
+Edit the English and Korean step text in `docs/_includes/steps/en/` and `docs/_includes/steps/ko/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md`, `docs/ko.md` and `docs/en/step-*.md` / `docs/ko/step-*.md` select each page; they do not duplicate the lesson content.
+
+The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The literal key placeholder is protected with Liquid raw tags in the step content so that it remains visible after the Pages build.
 
 GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No custom JavaScript, external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`.
 
