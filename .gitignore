@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+docs/_site/
+docs/.jekyll-cache/

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.lang == 'ko' %}준비된 AI 팀으로 홍콩 하루 일정을 만들고 내 취향에 맞게 바꾸는 초보자용 실습 가이드.{% else %}A beginner-friendly guide to running and adapting a small AI team for a Hong Kong day-trip draft.{% endif %}">
+  <title>{{ page.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">{% if page.lang == 'ko' %}본문으로 바로가기{% else %}Skip to guide{% endif %}</a>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">AI TEAM <span>WORKSHOP</span></a>
+    <nav aria-label="{% if page.lang == 'ko' %}언어 선택{% else %}Language{% endif %}">
+      <a href="{{ '/' | relative_url }}" lang="en" {% if page.lang == 'en' %}aria-current="page"{% endif %}>English</a>
+      <a href="{{ '/ko.html' | relative_url }}" lang="ko" {% if page.lang == 'ko' %}aria-current="page"{% endif %}>한국어</a>
+    </nav>
+  </header>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <p class="eyebrow">HONG KONG · 90 MIN</p>
+      <p class="sidebar-title">{% if page.lang == 'ko' %}작은 팀 하나,<br>내 취향대로.{% else %}One small team.<br>Make it yours.{% endif %}</p>
+      <nav aria-label="{% if page.lang == 'ko' %}실습 순서{% else %}Workshop steps{% endif %}">
+        <ol>
+          <li><a href="#step-1">{% if page.lang == 'ko' %}오늘 할 일{% else %}Meet the team{% endif %}</a></li>
+          <li><a href="#step-2">{% if page.lang == 'ko' %}가입하고 연결하기{% else %}Sign up & connect{% endif %}</a></li>
+          <li><a href="#step-5">{% if page.lang == 'ko' %}템플릿 불러오기{% else %}Open the template{% endif %}</a></li>
+          <li><a href="#step-6">{% if page.lang == 'ko' %}실행하고 이해하기{% else %}Run & understand{% endif %}</a></li>
+          <li><a href="#step-8">{% if page.lang == 'ko' %}내 취향으로 바꾸기{% else %}Make it yours{% endif %}</a></li>
+          <li><a href="#step-10">{% if page.lang == 'ko' %}저장하고 다시 쓰기{% else %}Save & reuse{% endif %}</a></li>
+        </ol>
+        <a class="help-link" href="#help">{% if page.lang == 'ko' %}막혔을 때{% else %}Need help?{% endif %}</a>
+        <a class="help-link" href="#timing">{% if page.lang == 'ko' %}테스트 시간 기록{% else %}Record test time{% endif %}</a>
+      </nav>
+      <a class="download" href="{{ '/assets/templates/hong-kong-day-trip-team-starter-v0.1.json' | relative_url }}" download>{% if page.lang == 'ko' %}여행 템플릿 다운로드{% else %}Download template{% endif %}<span>JSON · v0.1</span></a>
+      <p class="small">{% if page.lang == 'ko' %}다운로드만으로 실행되지는 않습니다. 가입·연결 후 Sim에 불러오세요.{% else %}Import this file into Sim after connecting your account. It does not run on this website.{% endif %}</p>
+    </aside>
+    <main id="main" tabindex="-1">
+      <div class="draft-note">
+        <strong>{% if page.lang == 'ko' %}테스트 중인 초안{% else %}Pilot draft{% endif %}</strong>
+        <p>{% if page.lang == 'ko' %}먼저 직접 따라 해보며 걸린 시간과 막힌 부분을 기록해주세요. 현지 접속과 새 여행 팀의 실행 검증은 아직 남아 있습니다.{% else %}Please test the steps and note your time and any difficulties. Local access and live execution of the new travel team still need verification.{% endif %}</p>
+      </div>
+      <article>{{ content }}</article>
+      <footer>
+        <p>Soohyun Kim · Pseudo Lab × PolyU · September 2026</p>
+        <p>{% if page.lang == 'ko' %}개인 API 키를 이 페이지나 공개 저장소에 입력하지 마세요.{% else %}Never put your private API key on this page or in a public repository.{% endif %}</p>
+        <a href="https://github.com/soohyunme/ai-agent-team-workshop">{% if page.lang == 'ko' %}자료 저장소{% else %}Source repository{% endif %}</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

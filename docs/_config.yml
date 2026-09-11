@@ -1,0 +1,7 @@
+title: AI Agent Team Workshop
+url: "https://soohyunme.github.io"
+baseurl: "/ai-agent-team-workshop"
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: null

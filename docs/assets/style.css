@@ -1,0 +1,75 @@
+:root {
+  color-scheme: light;
+  --ink: #20312e;
+  --muted: #52615d;
+  --green: #155848;
+  --border: #d7e0da;
+  --paper: #fbfcf9;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+a { color: var(--green); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #b15c14; outline-offset: 4px; border-radius: 2px; }
+.skip-link { position: absolute; top: -100px; left: 1rem; background: white; padding: .6rem 1rem; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.site-header { max-width: 1240px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); }
+.brand { text-decoration: none; font-size: .95rem; font-weight: 800; letter-spacing: .08em; }
+.brand span { font-weight: 400; }
+.site-header nav { display: flex; gap: 1rem; font-size: .9rem; }
+.site-header [aria-current] { font-weight: 750; text-decoration-thickness: 2px; }
+.page-shell { max-width: 1240px; margin: auto; display: grid; grid-template-columns: 245px minmax(0, 1fr); gap: 4rem; padding: 2.5rem 2rem 4rem; }
+.sidebar { position: sticky; top: 1.5rem; align-self: start; max-height: calc(100vh - 3rem); overflow-y: auto; }
+.eyebrow { font-size: .7rem; letter-spacing: .15em; font-weight: 750; color: var(--green); }
+.sidebar-title { font-size: 1.55rem; font-weight: 700; line-height: 1.3; margin: 1rem 0 1.7rem; }
+.sidebar ol { padding-left: 1.4rem; margin-bottom: 1rem; font-size: .9rem; }
+.sidebar li { margin: .7rem 0; padding-left: .2rem; }
+.sidebar li::marker { color: var(--muted); }
+.sidebar li a { text-decoration: none; }
+.help-link { display: block; margin: .5rem 0; font-size: .85rem; }
+.download { display: block; padding: .85rem 1rem; margin-top: 1.7rem; background: var(--green); color: white; border-radius: 8px; text-decoration: none; font-size: .9rem; font-weight: 650; }
+.download span { display: block; font-size: .75rem; font-weight: 400; }
+.small { font-size: .78rem; color: var(--muted); }
+main { min-width: 0; max-width: 810px; }
+.draft-note { padding: 1rem 1.25rem; border: 1px solid #e5cf98; background: #fff7e4; border-radius: 8px; font-size: .85rem; }
+.draft-note p { margin: .3rem 0 0; }
+h1, h2, h3 { line-height: 1.3; letter-spacing: -.025em; overflow-wrap: anywhere; }
+h1 { font-size: clamp(2rem, 3.4vw, 3rem); margin: 1.8rem 0 1rem; }
+h2 { font-size: 1.5rem; margin: 3.2rem 0 1.2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+h3 { font-size: 1.15rem; margin-top: 1.8rem; }
+p { margin: 1rem 0; }
+li { margin-bottom: .55rem; }
+strong { font-weight: 700; }
+code { background: #eaf0eb; padding: .12em .3em; border-radius: 4px; font: .86em/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #edf2ed; border: 1px solid var(--border); padding: 1.1rem; border-radius: 8px; }
+pre code { background: transparent; padding: 0; border: 0; }
+table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: 1.2rem 0; table-layout: fixed; overflow-wrap: anywhere; }
+th, td { text-align: left; vertical-align: top; padding: .65rem .75rem; border: 1px solid var(--border); }
+th { background: #edf2ed; font-weight: 650; }
+blockquote { border-left: 3px solid var(--green); margin: 1.5rem 0; padding: .1rem 1rem; color: var(--muted); }
+footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .8rem; }
+footer p { margin: .4rem 0; }
+@media (max-width: 850px) {
+  .page-shell { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem 1.25rem; }
+  .site-header { padding: 1rem 1.25rem; }
+  .sidebar { position: static; max-height: none; overflow: visible; }
+  .sidebar-title { margin: .5rem 0 1rem; }
+  .sidebar ol { display: grid; grid-template-columns: 1fr 1fr; gap: .2rem 1.5rem; }
+  .download { max-width: 360px; margin-top: 1rem; }
+  main { max-width: none; }
+}
+@media (max-width: 420px) {
+  body { font-size: 16px; }
+  .brand { font-size: .8rem; }
+  th, td { padding: .5rem; }
+  .site-header nav { gap: .6rem; }
+}
+@media print {
+  .site-header, .sidebar, .skip-link { display: none; }
+  .page-shell { display: block; padding: 0; }
+  body { background: white; font-size: 11pt; }
+  main { max-width: none; }
+  h2, h3 { break-after: avoid; }
+  tr, pre { break-inside: avoid; }
+}
