@@ -48,10 +48,7 @@
     </aside>
     <main id="main" tabindex="-1">
       {% if page.step == 1 or page.full %}
-      <div class="draft-note">
-        <strong>{% if language == 'ko' %}자료 상태 안내{% else %}Materials status{% endif %}</strong>
-        <p>{% if language == 'ko' %}이 자료는 사전 검토본입니다. 여행 템플릿의 실행과 현지 접속 확인은 아직 완료되지 않았습니다.{% else %}These materials are a pre-release version. Live execution of the travel template and local access have not yet been verified.{% endif %}</p>
-      </div>
+      <p class="small">{% if language == 'ko' %}최종 업데이트:{% else %}Last updated:{% endif %} <time datetime="{{ site.last_updated }}">{% if language == 'ko' %}{{ site.last_updated | date: '%Y.%m.%d' }}{% else %}{{ site.last_updated | date: '%d %B %Y' }}{% endif %}</time></p>
       {% endif %}
       {% if page.full %}
       <h1>{% if language == 'ko' %}전체 실습 가이드{% else %}The complete workshop guide{% endif %}</h1>

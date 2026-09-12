@@ -23,6 +23,8 @@ No GitHub account, Git or local development setup is needed to read the website.
 
 The default guide is eight separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
 
+The participant pages display the material's last-updated date, set in `docs/_config.yml` as `last_updated`. Update it when revising the published guide. Validation status is tracked above and is not implied by the update date.
+
 Edit the English and Korean step text in `docs/_includes/steps/en/` and `docs/_includes/steps/ko/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md`, `docs/ko.md` and `docs/en/step-*.md` / `docs/ko/step-*.md` select each page; they do not duplicate the lesson content.
 
 The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The literal key placeholder is protected with Liquid raw tags in the step content so that it remains visible after the Pages build.
