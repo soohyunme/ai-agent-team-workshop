@@ -7,7 +7,7 @@
 | An API key or authentication error appears | Check that `OPENROUTER_API_KEY` is saved in Secrets in the workspace used for this exercise. |
 | `429 Provider returned error` appears | Avoid repeated runs and contact the facilitator. This may be a usage limit or a temporary service restriction. |
 | A payment or upgrade request appears | Contact the facilitator before making a purchase. |
-| AI reports that input information is missing | Check that interests, food, pace and places in Start contain values. |
+| AI reports that input information is missing | Check that interests, food and pace in Start contain values. If the message says shared cards are missing, ask the facilitator. |
 | An earlier answer seems to be displayed | Check that you selected the latest run in Logs. |
 | The result changes very little | Check whether it already meets your updated interests and conditions. |
 | A requested condition is not followed | Mark the issue and compare it with the original request and instructions. Ask the facilitator if needed. |
