@@ -79,13 +79,13 @@
     "en": {
       "title": "Change your interests & instructions",
       "goal": "Change sightseeing and food preferences, then add a condition for the itinerary organizer.",
-      "check": "Have you updated the interests in trip and appended the rule to Trip Planner's System, leaving the User references unchanged?",
+      "check": "Have you updated the interests and food values in Start and appended the rule to Trip Planner's System, leaving the User references unchanged?",
       "url": "/en/step-6.html"
     },
     "ko": {
       "title": "내 취향과 지시 바꾸기",
       "goal": "관광·음식 취향을 바꾸고 일정 담당이 따를 조건을 추가합니다.",
-      "check": "trip의 관심사와 Trip Planner의 System 지시를 수정했나요? User의 참조 표시는 그대로 유지했나요?",
+      "check": "Start의 관심사·음식 취향와 Trip Planner의 System 지시를 수정했나요? User의 참조 표시는 그대로 유지했나요?",
       "url": "/ko/step-6.html"
     }
   },
