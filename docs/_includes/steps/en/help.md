@@ -8,6 +8,7 @@
 | `429 Provider returned error` appears | Avoid repeated runs and contact the facilitator. This may be a usage limit or a temporary service restriction. |
 | A payment or upgrade request appears | Contact the facilitator before making a purchase. |
 | AI reports that input information is missing | Check that interests, food and pace in Start contain values. If the message says shared cards are missing, ask the facilitator. |
+| An earlier answer is not passed on | Check block names, connection order and content references in User. An arrow alone does not insert the answer into a message. |
 | An earlier answer seems to be displayed | Check that you selected the latest run in Logs. |
 | The result changes very little | Check whether it already meets your updated interests and conditions. |
 | A requested condition is not followed | Mark the issue and compare it with the original request and instructions. Ask the facilitator if needed. |
@@ -32,10 +33,10 @@ For review or feedback, print the table below or copy it into your own notes. Th
 | 1. Understand the team and preparation | | |
 | 2. OpenRouter signup and key creation | | |
 | 3. Sim signup and key connection | | |
-| 4. Import the travel template | | |
-| 5. First run and role exploration | | |
-| 6. Update preferences and instructions | | |
-| 7. Rerun and review the result | | |
+| 4. Create a workflow & prepare inputs | | |
+| 5. Build the first agent & write prompts | | |
+| 6. Add the other roles & handoffs | | |
+| 7. Run, change a request & compare | | |
 | 8. Check saving and reuse | | |
 
 Mark steps skipped because of an existing account or key as “skipped”. When recording time, include page loading, email and AI response waits, but exclude breaks unrelated to the exercise.

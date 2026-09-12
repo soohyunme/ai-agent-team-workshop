@@ -3,13 +3,13 @@
     "id": 1,
     "en": {
       "title": "Meet the team & get ready",
-      "goal": "Understand what the team will make and have your laptop, internet and email ready.",
+      "goal": "Understand the collaboration through a demonstration and get ready to build.",
       "check": "Can you describe the three AI roles? Can you access the internet and your email on your laptop?",
       "url": "/"
     },
     "ko": {
       "title": "오늘 만들 팀과 준비물",
-      "goal": "팀이 만들 결과를 이해하고 노트북·인터넷·이메일 확인 수단을 준비합니다.",
+      "goal": "완성본 시연으로 협력 구조를 이해하고 직접 만들 준비를 합니다.",
       "check": "세 AI가 각각 어떤 일을 하는지 설명할 수 있나요? 노트북에서 인터넷과 이메일을 이용할 수 있나요?",
       "url": "/ko.html"
     }
@@ -47,60 +47,60 @@
   {
     "id": 4,
     "en": {
-      "title": "Import the travel template",
-      "goal": "Open a copy of the prepared team in your workspace.",
-      "check": "Are Start, Sightseeing Planner, Food Planner and Trip Planner connected in that order?",
+      "title": "Create a workflow & prepare inputs",
+      "goal": "Prepare short travel inputs and shared cards in a new workflow.",
+      "check": "Are Start's interests, food and pace and the cards variable ready?",
       "url": "/en/step-4.html"
     },
     "ko": {
-      "title": "여행 템플릿 불러오기",
-      "goal": "준비된 여행 팀을 내 작업 공간으로 불러옵니다.",
-      "check": "Start, Sightseeing Planner, Food Planner, Trip Planner 블록이 순서대로 연결돼 있나요?",
+      "title": "새 워크플로·입력 준비",
+      "goal": "빈 워크플로에 짧은 여행 요청과 공통 자료를 준비합니다.",
+      "check": "Start의 interests·food·pace와 Variables의 cards가 준비됐나요?",
       "url": "/ko/step-4.html"
     }
   },
   {
     "id": 5,
     "en": {
-      "title": "First run & understand the roles",
-      "goal": "Read the first draft and trace how one AI's answer reaches the next.",
-      "check": "Can you read the final itinerary and explain how the food specialist used the sightseeing areas?",
+      "title": "Build the first agent & write prompts",
+      "goal": "Create the sightseeing specialist and distinguish System from User.",
+      "check": "Is Sightseeing Planner connected to Start? Can you explain what its System and User messages do?",
       "url": "/en/step-5.html"
     },
     "ko": {
-      "title": "첫 실행·세 역할 이해하기",
-      "goal": "첫 일정 초안을 읽고 앞 AI의 답변이 다음 AI로 전달되는 과정을 확인합니다.",
-      "check": "최종 일정 초안이 보이나요? 식사 담당이 관광 담당의 지역 정보를 어떻게 활용했는지 설명할 수 있나요?",
+      "title": "첫 에이전트·프롬프트 작성",
+      "goal": "관광 담당을 만들고 System과 User의 역할을 구분해 입력합니다.",
+      "check": "Sightseeing Planner가 Start에 연결됐나요? System과 User가 각각 무엇을 전달하는지 설명할 수 있나요?",
       "url": "/ko/step-5.html"
     }
   },
   {
     "id": 6,
     "en": {
-      "title": "Change your interests & instructions",
-      "goal": "Change sightseeing and food preferences, then add a condition for the itinerary organizer.",
-      "check": "Have you updated the interests and food values in Start and appended the rule to Trip Planner's System, leaving the User references unchanged?",
+      "title": "Add the other roles & handoffs",
+      "goal": "Create the food and itinerary roles and pass earlier answers to them.",
+      "check": "Are the three agents connected in order? Does Trip Planner's User reference both earlier content outputs?",
       "url": "/en/step-6.html"
     },
     "ko": {
-      "title": "내 취향과 지시 바꾸기",
-      "goal": "관광·음식 취향을 바꾸고 일정 담당이 따를 조건을 추가합니다.",
-      "check": "Start의 관심사·음식 취향와 Trip Planner의 System 지시를 수정했나요? User의 참조 표시는 그대로 유지했나요?",
+      "title": "나머지 역할·결과 연결",
+      "goal": "식사·일정 담당을 만들고 앞 담당자의 답변을 연결합니다.",
+      "check": "세 Agent가 순서대로 연결됐나요? Trip Planner의 User가 앞 두 담당자의 content를 참조하나요?",
       "url": "/ko/step-6.html"
     }
   },
   {
     "id": 7,
     "en": {
-      "title": "Run again & check the result",
-      "goal": "Check whether the new draft follows your interests and your added rule.",
-      "check": "Do sightseeing and food areas match? Have you checked food preferences, the activity limit and rest, and distinguished fictional meals from real dining options?",
+      "title": "Run, change a request & compare",
+      "goal": "Run your team, change one User request and check the result.",
+      "check": "Did the one-sightseeing request take effect? Have you checked meal areas, rest, fictional labels and evidence?",
       "url": "/en/step-7.html"
     },
     "ko": {
-      "title": "다시 실행·결과 확인하기",
-      "goal": "새 일정이 내 관심사와 추가한 조건을 따르는지 확인합니다.",
-      "check": "관광지와 식사 후보의 지역이 맞나요? 음식 취향·활동 수·휴식 조건을 확인했고 가상 식사 예시임을 구분했나요?",
+      "title": "실행·요청 수정·결과 비교",
+      "goal": "직접 만든 팀을 실행하고 User 요청 하나를 바꿔 결과를 확인합니다.",
+      "check": "관광 한 곳 요청이 반영됐나요? 식사 지역·휴식·가상 자료 표시와 근거를 확인했나요?",
       "url": "/ko/step-7.html"
     }
   },

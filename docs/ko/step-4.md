@@ -2,5 +2,5 @@
 layout: default
 lang: ko
 step: 4
-title: "여행 템플릿 불러오기 · AI Agent Hands-On Workshop"
+title: "새 워크플로·입력 준비 · AI Agent Hands-On Workshop"
 ---

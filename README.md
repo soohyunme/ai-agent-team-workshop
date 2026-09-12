@@ -1,6 +1,6 @@
 # AI Agent Hands-On Workshop
 
-Beginner-friendly workshop: use a small AI team to draft a Hong Kong day trip, change your interests and instructions, and reuse the team.
+Beginner-friendly workshop: watch a completed team, build three agents in a new workflow, write System/User prompts, connect their outputs, and reuse the team.
 
 - [English guide](https://soohyunme.github.io/ai-agent-team-workshop/)
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
@@ -8,14 +8,18 @@ Beginner-friendly workshop: use a small AI team to draft a Hong Kong day trip, c
 - [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
 - [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.4.json)
 
-**Validation status: pre-release.** Live execution of the v0.4 sightseeing/food/itinerary template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
+**Validation status: pre-release.** The new build-from-scratch path, live execution of the v0.4 example, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
 
 ## What participants do
 
-1. Sign in to Sim and OpenRouter, and connect their own API key.
-2. Import and run the prepared team: choose sightseeing and areas → select matching food examples → assemble an itinerary.
-3. Change interests and one checking instruction.
-4. Run again, inspect the result and reopen the saved team.
+1. Watch the facilitator demonstrate the completed travel team.
+2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
+3. Add short Start inputs and the shared cards; create and connect the three agents.
+4. Enter each role's System/User prompts, predict the handoffs, then run the team.
+5. Change one User request, check the result, and optionally change one System output rule.
+6. Reopen the saved team and sketch a team for a personal task.
+
+The v0.4 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and shared cards match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks.
 
 No GitHub account, Git or local development setup is needed to read the website. The website contains instructions and a downloadable template; AI requests run through Sim and OpenRouter. This is not a live search or booking service.
 
