@@ -40,7 +40,7 @@ a:focus-visible { outline: 3px solid #b15c14; outline-offset: 4px; border-radius
 .page-button.previous { grid-column: 1; }
 
 .help-link { display: block; margin: .5rem 0; font-size: .85rem; }
-.download { display: block; padding: .85rem 1rem; margin-top: 1.7rem; background: var(--green); color: white; border-radius: 8px; text-decoration: none; font-size: .9rem; font-weight: 650; }
+.download { display: block; max-width: 360px; padding: .85rem 1rem; margin-top: 1.7rem; background: var(--green); color: white; border-radius: 8px; text-decoration: none; font-size: .9rem; font-weight: 650; }
 .download span { display: block; font-size: .75rem; font-weight: 400; }
 .small { font-size: .78rem; color: var(--muted); }
 main { min-width: 0; max-width: 810px; }
