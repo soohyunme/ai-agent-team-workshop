@@ -108,14 +108,14 @@
     "id": 8,
     "en": {
       "title": "Save & use your team again",
-      "goal": "Make sure you can reopen the changed team and use it later.",
-      "check": "Are your updated request and instructions still present when you reopen the team? Can you explain how to change trip and run it next time?",
+      "goal": "Reopen the changed team and sketch how an agent team could help with your own task.",
+      "check": "Are your updated request and instructions still present when you reopen the team? Have you noted a goal, roles, handoffs and checks for your own task?",
       "url": "/en/step-8.html"
     },
     "ko": {
       "title": "저장·다시 사용하기",
-      "goal": "수정한 팀을 다시 열어 다음에도 쓸 수 있는지 확인합니다.",
-      "check": "팀을 다시 열었을 때 수정한 요청과 지시가 남아 있나요? 다음에 trip을 바꿔 실행하는 방법을 설명할 수 있나요?",
+      "goal": "수정한 팀을 다시 열고, 자신의 과제에 적용할 팀의 구상을 적어봅니다.",
+      "check": "팀을 다시 열었을 때 수정한 요청과 지시가 남아 있나요? 자신의 과제를 위한 목표·역할·전달할 내용·확인 기준을 적었나요?",
       "url": "/ko/step-8.html"
     }
   }
