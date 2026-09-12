@@ -1,0 +1,7 @@
+{% capture template_json %}{% include template-copy.json %}{% endcapture %}
+<div class="template-copy">
+  <label for="template-json">{% if language == 'ko' %}복사용 템플릿 전체 내용{% else %}Complete template for copying{% endif %}</label>
+  <textarea id="template-json" readonly rows="8" spellcheck="false">{{ template_json | strip | escape }}</textarea>
+  <button type="button" id="copy-template">{% if language == 'ko' %}템플릿 내용 복사{% else %}Copy template contents{% endif %}</button>
+  <p id="copy-status" role="status" aria-live="polite"></p>
+</div>

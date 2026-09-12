@@ -83,3 +83,7 @@ footer p { margin: .4rem 0; }
   h2, h3 { break-after: avoid; }
   tr, pre { break-inside: avoid; }
 }
+/* Keep the optional template fallback readable without widening the page. */
+.template-copy textarea { display: block; width: 100%; box-sizing: border-box; margin: .5rem 0; font-family: monospace; }
+.template-copy button { padding: .6rem 1rem; cursor: pointer; }
+.template-copy button:focus-visible, .template-copy textarea:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }

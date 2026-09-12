@@ -29,7 +29,9 @@ Edit the English and Korean step text in `docs/_includes/steps/en/` and `docs/_i
 
 The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The literal key placeholder is protected with Liquid raw tags in the step content so that it remains visible after the Pages build.
 
-GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No custom JavaScript, external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`.
+GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`. A small script supports the optional copy button in step 4; manual selection and copying work without JavaScript.
+
+Step 4 embeds a download fallback in `docs/_includes/template-copy.json`, wrapped in Liquid raw tags. Keep its JSON identical to `docs/assets/templates/hong-kong-day-trip-team-starter-v0.2.json` when updating the template. This embeds the contents in the guide rather than fetching the download URL again.
 
 Only participant-facing guides and the selected template are included. Private preparation notes, conversation screenshots and the event proposal are not part of this repository.
 
