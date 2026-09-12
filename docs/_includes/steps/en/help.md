@@ -19,6 +19,7 @@ When asking for help, share the step number and error message. **Keep API keys o
 Use these questions to review what you have learned.
 
 - What job did each of the three agents perform?
+- Which information from the sightseeing specialist did the food specialist use?
 - How does changing the travel request differ from changing an agent's instructions?
 - What would you like to use this team for next?
 

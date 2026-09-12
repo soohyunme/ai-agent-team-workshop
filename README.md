@@ -6,14 +6,14 @@ Beginner-friendly workshop: use a small AI team to draft a Hong Kong day trip, c
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
 - [Full English guide](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
 - [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
-- [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.1.json)
+- [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.2.json)
 
-**Validation status: pre-release.** Live execution of the new travel template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
+**Validation status: pre-release.** Live execution of the v0.2 sightseeing/food/itinerary template, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
 
 ## What participants do
 
 1. Sign in to Sim and OpenRouter, and connect their own API key.
-2. Import and run the prepared team: select activities → arrange a draft → check preferences.
+2. Import and run the prepared team: choose sightseeing and areas → select matching food examples → assemble an itinerary.
 3. Change interests and one checking instruction.
 4. Run again, inspect the result and reopen the saved team.
 
@@ -32,3 +32,7 @@ The template lives in `docs/assets/templates/`. Keep actual API keys out of all 
 GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No custom JavaScript, external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`.
 
 Only participant-facing guides and the selected template are included. Private preparation notes, conversation screenshots and the event proposal are not part of this repository.
+
+## Current template
+
+Starter v0.2 separates Sightseeing Planner, Food Planner and Trip Planner. Food Planner must use the sightseeing areas, and Trip Planner combines both outputs. Food cards are explicitly fictional teaching examples. v0.1 is retained for existing links but is not the current exercise. Import v0.2 as a new workflow; it has not yet been verified by a live model run.
