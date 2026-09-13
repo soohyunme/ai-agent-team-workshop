@@ -93,14 +93,14 @@
     "id": 7,
     "en": {
       "title": "Review and improve the team's result",
-      "goal": "Give the reply a new requirement and trace how each role's result is reflected.",
-      "check": "Are both concerns addressed? Can you explain how earlier results informed the reply?",
+      "goal": "Review how the roles work together, then request a shorter reply and compare the results.",
+      "check": "Is the reply under 90 words with both concerns included? Can you explain which role's request you changed?",
       "url": "/en/step-7.html"
     },
     "ko": {
       "title": "팀의 결과 검토·개선하기",
-      "goal": "답변에 새 조건을 요청하고 각 역할의 결과가 어떻게 반영되는지 확인합니다.",
-      "check": "두 불편 사항을 모두 다루나요? 답변에 앞 담당자들의 결과가 어떻게 반영됐는지 설명할 수 있나요?",
+      "goal": "역할 간 협력 결과를 확인한 뒤, 답변을 짧게 요청하고 전후 결과를 비교합니다.",
+      "check": "답변이 두 불편 사항을 포함하면서 영어 90단어 미만인가요? 어느 역할의 요청을 바꿨는지 설명할 수 있나요?",
       "url": "/ko/step-7.html"
     }
   },
