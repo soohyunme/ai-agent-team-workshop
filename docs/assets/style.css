@@ -54,6 +54,8 @@ strong { font-weight: 700; }
 code { background: #eaf0eb; padding: .12em .3em; border-radius: 4px; font: .86em/1.7 ui-monospace, SFMono-Regular, Consolas, monospace; overflow-wrap: anywhere; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #edf2ed; border: 1px solid var(--border); padding: 1.1rem; border-radius: 8px; }
 pre code { background: transparent; padding: 0; border: 0; }
+.mermaid { overflow-x: auto; }
+.mermaid svg { display: block; min-width: 650px; margin: auto; }
 table { width: 100%; border-collapse: collapse; font-size: .9rem; margin: 1.2rem 0; table-layout: fixed; overflow-wrap: anywhere; }
 th, td { text-align: left; vertical-align: top; padding: .65rem .75rem; border: 1px solid var(--border); }
 th { background: #edf2ed; font-weight: 650; }

@@ -1,6 +1,6 @@
 # AI Agent Hands-On Workshop
 
-Beginner-friendly workshop: divide a shared goal into roles, build and connect three agents, review their results, and adapt the approach to your own work. Sim and System/User messages are implementation tools, not the learning goal.
+Beginner-friendly workshop: build a basic multi-agent collaboration structure by assigning roles, passing information and combining results. Apply this approach to design and use collaboration patterns for your own assignments or tasks of interest. Sim and System/User messages are implementation tools, not the learning goal.
 
 - [English guide](https://soohyunme.github.io/ai-agent-team-workshop/)
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)

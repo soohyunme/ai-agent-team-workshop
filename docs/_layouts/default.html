@@ -16,7 +16,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if language == 'ko' %}준비된 AI 팀으로 홍콩 하루 일정을 만들고 내 취향에 맞게 바꾸는 8단계 실습 가이드.{% else %}An eight-step beginner guide to running and adapting a small AI team for a Hong Kong day-trip draft.{% endif %}">
+  <meta name="description" content="{% if language == 'ko' %}호텔 리뷰 대응 예시로 역할 분담·정보 전달·결과 취합이라는 멀티 에이전트의 기본 협력 구조를 직접 만드는 8단계 실습 가이드.{% else %}An eight-step guide to building basic multi-agent collaboration through role assignment, information sharing and combining results, using a hotel review example.{% endif %}">
   <title>{{ page.title | escape }}</title>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
@@ -94,6 +94,19 @@
       </footer>
     </main>
   </div>
+  {% if page.step == 1 or page.full %}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.0/dist/mermaid.esm.min.mjs';
+    const diagrams = Array.from(document.querySelectorAll('code.language-mermaid'), (code) => {
+      const pre = code.parentElement;
+      pre.textContent = code.textContent;
+      pre.classList.add('mermaid');
+      return pre;
+    });
+    mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: 'neutral', flowchart: { htmlLabels: false } });
+    await mermaid.run({ nodes: diagrams });
+  </script>
+  {% endif %}
   {% if page.step == 4 or page.full %}
   <script src="{{ '/assets/template-copy.js' | relative_url }}" defer></script>
   {% endif %}
