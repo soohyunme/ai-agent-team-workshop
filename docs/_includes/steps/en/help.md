@@ -20,7 +20,7 @@ When asking for help, share the step number and error message. **Keep API keys o
 Use these questions to review what you have learned.
 
 - What job did each of the three agents perform?
-- Which analysis did the operations advisor use? How did the communicator use both earlier results?
+- What did the analyst and operations advisor each produce from the same review? How did the communicator use both results?
 - How does changing the reply request differ from changing an agent's instructions?
 - What would you like to use this team for next?
 

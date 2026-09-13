@@ -49,13 +49,13 @@
     "en": {
       "title": "Create a workflow & prepare inputs",
       "goal": "Prepare a fictional guest review in a new workflow.",
-      "check": "Are Start's review ready? Can you distinguish reported feedback from unknown facts?",
+      "check": "Is Start's review ready? Can you distinguish reported feedback from unknown facts?",
       "url": "/en/step-4.html"
     },
     "ko": {
       "title": "새 워크플로·입력 준비",
       "goal": "빈 워크플로에 가상 고객 리뷰를 입력합니다.",
-      "check": "Start의 review이 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
+      "check": "Start의 review가 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
       "url": "/ko/step-4.html"
     }
   },
@@ -78,13 +78,13 @@
     "id": 6,
     "en": {
       "title": "Connect the roles to collaborate",
-      "goal": "Build the operations and communication roles and pass analysis and proposals.",
+      "goal": "Build an independent operations role and connect both results to the communicator.",
       "check": "Does the communicator receive the review, analysis and proposals? Can you explain why each is passed on?",
       "url": "/en/step-6.html"
     },
     "ko": {
       "title": "협력하도록 연결하기",
-      "goal": "운영 개선·고객 소통 담당을 만들고 분석·제안 결과를 전달합니다.",
+      "goal": "독립적으로 일하는 운영 담당을 만들고 두 결과를 소통 담당에게 연결합니다.",
       "check": "소통 담당이 원문·분석·내부 제안을 함께 받나요? 각 결과를 전달하는 이유를 설명할 수 있나요?",
       "url": "/ko/step-6.html"
     }

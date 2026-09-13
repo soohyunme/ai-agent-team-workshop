@@ -41,6 +41,6 @@ Only participant-facing guides and the selected template are included. Private p
 
 ## Current example
 
-Hotel Review Response Team v1.0 uses one short Start input (`review`) and three roles: Review Analyst → Operations Advisor → Guest Reply Writer. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
+Hotel Review Response Team v1.0 uses one short Start input (`review`) and three roles: Review Analyst and Operations Advisor working independently from the same review, then Guest Reply Writer combining both results. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
 
 The earlier [travel team v0.4](docs/assets/templates/hong-kong-day-trip-team-starter-v0.4.json) remains an optional reference. Older travel versions are retained for existing links, not part of the main exercise.
