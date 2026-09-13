@@ -79,13 +79,13 @@
     "en": {
       "title": "Connect the roles to collaborate",
       "goal": "Build the operations and communication roles and pass analysis and proposals.",
-      "check": "Does the communicator receive the review, analysis and proposals? Are proposals distinct from completed actions?",
+      "check": "Does the communicator receive the review, analysis and proposals? Can you explain why each is passed on?",
       "url": "/en/step-6.html"
     },
     "ko": {
       "title": "협력하도록 연결하기",
       "goal": "운영 개선·고객 소통 담당을 만들고 분석·제안 결과를 전달합니다.",
-      "check": "소통 담당이 원문·분석·내부 제안을 함께 받나요? 제안과 완료된 조치를 구분하나요?",
+      "check": "소통 담당이 원문·분석·내부 제안을 함께 받나요? 각 결과를 전달하는 이유를 설명할 수 있나요?",
       "url": "/ko/step-6.html"
     }
   },
@@ -93,14 +93,14 @@
     "id": 7,
     "en": {
       "title": "Review and improve the team's result",
-      "goal": "Add reply conditions and check evidence and commitments.",
-      "check": "Are both concerns addressed without unverified improvement claims or compensation promises?",
+      "goal": "Give the reply a new requirement and trace how each role's result is reflected.",
+      "check": "Are both concerns addressed? Can you explain how earlier results informed the reply?",
       "url": "/en/step-7.html"
     },
     "ko": {
       "title": "팀의 결과 검토·개선하기",
-      "goal": "고객 답변에 새 조건을 요청하고 근거와 약속 여부를 검토합니다.",
-      "check": "두 불편 사항을 모두 다루나요? 확인되지 않은 개선 완료나 보상을 약속하지 않나요?",
+      "goal": "답변에 새 조건을 요청하고 각 역할의 결과가 어떻게 반영되는지 확인합니다.",
+      "check": "두 불편 사항을 모두 다루나요? 답변에 앞 담당자들의 결과가 어떻게 반영됐는지 설명할 수 있나요?",
       "url": "/ko/step-7.html"
     }
   },
