@@ -2,5 +2,5 @@
 layout: default
 lang: en
 step: 1
-title: "Meet the team & get ready · AI Agent Hands-On Workshop"
+title: "Today's exercise & preparation · AI Agent Hands-On Workshop"
 ---

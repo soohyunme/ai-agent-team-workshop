@@ -7,10 +7,10 @@
 | An API key or authentication error appears | Check that `OPENROUTER_API_KEY` is saved in Secrets in the workspace used for this exercise. |
 | `429 Provider returned error` appears | Avoid repeated runs and contact the facilitator. This may be a usage limit or a temporary service restriction. |
 | A payment or upgrade request appears | Contact the facilitator before making a purchase. |
-| AI reports that input information is missing | Check that interests, food and pace in Start contain values. If the message says shared cards are missing, ask the facilitator. |
+| AI reports that input information is missing | Check that review and tone in Start contain values. |
 | An earlier answer is not passed on | Check block names, connection order and content references in User. An arrow alone does not insert the answer into a message. |
 | An earlier answer seems to be displayed | Check that you selected the latest run in Logs. |
-| The result changes very little | Check whether it already meets your updated interests and conditions. |
+| The result changes very little | Check whether it already meets your updated reply requirements. |
 | A requested condition is not followed | Mark the issue and compare it with the original request and instructions. Ask the facilitator if needed. |
 
 When asking for help, share the step number and error message. **Keep API keys out of the screen or screenshot you share.**
@@ -20,8 +20,8 @@ When asking for help, share the step number and error message. **Keep API keys o
 Use these questions to review what you have learned.
 
 - What job did each of the three agents perform?
-- Which information from the sightseeing specialist did the food specialist use?
-- How does changing the travel request differ from changing an agent's instructions?
+- Which analysis did the operations advisor use? Did the communicator distinguish proposals from completed actions?
+- How does changing the reply request differ from changing an agent's instructions?
 - What would you like to use this team for next?
 
 ### Optional: record your progress

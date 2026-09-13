@@ -6,20 +6,20 @@ Beginner-friendly workshop: divide a shared goal into roles, build and connect t
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
 - [Full English guide](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
 - [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
-- [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hong-kong-day-trip-team-starter-v0.4.json)
+- [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hotel-review-response-team-example-v1.0.json)
 
-**Validation status: pre-release.** The new build-from-scratch path, live execution of the v0.4 example, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
+**Validation status: pre-release.** The new build-from-scratch path, live execution of the hotel example v1.0 example, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
 
 ## What participants do
 
-1. Watch the facilitator demonstrate the completed travel team.
+1. Watch the facilitator demonstrate the completed hotel review response system.
 2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
-3. Add short Start inputs and the shared cards; create and connect the three agents.
+3. Add short review and tone inputs; create and connect the three agents.
 4. Define each role's job and required information, implement them through System/User messages, then run the team.
-5. Give the itinerary organizer a new travel condition and check how it uses the specialists' results. Optionally improve the output format.
+5. Give the guest communicator a new reply requirement and check how it uses the specialists' results. Optionally improve the output format.
 6. Reopen the saved team and sketch a team for a personal task.
 
-The v0.4 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and shared cards match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks.
+The hotel example v1.0 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and inputs match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks.
 
 No GitHub account, Git or local development setup is needed to read the website. The website contains instructions and a downloadable template; AI requests run through Sim and OpenRouter. This is not a live search or booking service.
 
@@ -35,10 +35,12 @@ The template lives in `docs/assets/templates/`. Keep actual API keys out of all 
 
 GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`. A small script supports the optional copy button in step 4; manual selection and copying work without JavaScript.
 
-Step 4 embeds a download fallback in `docs/_includes/template-copy.json`, wrapped in Liquid raw tags. Keep its JSON identical to `docs/assets/templates/hong-kong-day-trip-team-starter-v0.4.json` when updating the template. This embeds the contents in the guide rather than fetching the download URL again.
+Step 4 embeds a download fallback in `docs/_includes/template-copy.json`, wrapped in Liquid raw tags. Keep its JSON identical to `docs/assets/templates/hotel-review-response-team-example-v1.0.json` when updating the template. This embeds the contents in the guide rather than fetching the download URL again.
 
 Only participant-facing guides and the selected template are included. Private preparation notes, conversation screenshots and the event proposal are not part of this repository.
 
-## Current template
+## Current example
 
-Starter v0.4 uses short `interests`, `food` and `pace` inputs instead of a multiline travel request. Shared cards are stored once in the `cards` object variable and referenced as `<variable.cards>` by each specialist; Start has no long `places` field. It separates Sightseeing Planner, Food Planner and Trip Planner. Food Planner must use the sightseeing areas, and Trip Planner combines both outputs. Food cards are explicitly fictional teaching examples. v0.1, v0.2 and v0.3 are retained for existing links but are not the current exercise. Import v0.4 as a new workflow; it has not yet been verified by a live model run.
+Hotel Review Response Team v1.0 uses two short Start inputs (`review`, `tone`) and three roles: Review Analyst → Operations Advisor → Guest Reply Writer. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
+
+The earlier [travel team v0.4](docs/assets/templates/hong-kong-day-trip-team-starter-v0.4.json) remains an optional reference. Older travel versions are retained for existing links, not part of the main exercise.

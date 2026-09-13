@@ -2,13 +2,13 @@
   {
     "id": 1,
     "en": {
-      "title": "Meet the team & get ready",
+      "title": "Today's exercise & preparation",
       "goal": "Understand the collaboration through a demonstration and get ready to build.",
       "check": "Can you describe the three AI roles? Can you access the internet and your email on your laptop?",
       "url": "/"
     },
     "ko": {
-      "title": "오늘 만들 팀과 준비물",
+      "title": "오늘의 실습과 준비물",
       "goal": "완성본 시연으로 협력 구조를 이해하고 직접 만들 준비를 합니다.",
       "check": "세 AI가 각각 어떤 일을 하는지 설명할 수 있나요? 노트북에서 인터넷과 이메일을 이용할 수 있나요?",
       "url": "/ko.html"
@@ -48,14 +48,14 @@
     "id": 4,
     "en": {
       "title": "Create a workflow & prepare inputs",
-      "goal": "Prepare short travel inputs and shared cards in a new workflow.",
-      "check": "Are Start's interests, food and pace and the cards variable ready?",
+      "goal": "Prepare a fictional guest review and reply tone in a new workflow.",
+      "check": "Are Start's review and tone ready? Can you distinguish reported feedback from unknown facts?",
       "url": "/en/step-4.html"
     },
     "ko": {
       "title": "새 워크플로·입력 준비",
-      "goal": "빈 워크플로에 짧은 여행 요청과 공통 자료를 준비합니다.",
-      "check": "Start의 interests·food·pace와 Variables의 cards가 준비됐나요?",
+      "goal": "빈 워크플로에 가상 고객 리뷰와 답변 말투를 입력합니다.",
+      "check": "Start의 review·tone이 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
       "url": "/ko/step-4.html"
     }
   },
@@ -63,14 +63,14 @@
     "id": 5,
     "en": {
       "title": "Build the first role",
-      "goal": "Define the sightseeing specialist's responsibilities and required information, then build it.",
-      "check": "Can you distinguish this role's job from the other roles' jobs? What information does it receive and pass on?",
+      "goal": "Define and implement the feedback analyst's responsibilities and required information.",
+      "check": "Can you distinguish analysis from the other roles' jobs? Does the analyst pass original evidence?",
       "url": "/en/step-5.html"
     },
     "ko": {
       "title": "첫 역할 만들기",
-      "goal": "관광 담당에게 맡길 일과 필요한 정보를 정하고 첫 역할을 만듭니다.",
-      "check": "관광 담당이 할 일과 다른 담당자에게 맡길 일을 구분할 수 있나요? 어떤 정보를 입력받고 전달하나요?",
+      "goal": "고객 의견 분석 담당의 책임과 필요한 정보를 정하고 구현합니다.",
+      "check": "분석 담당이 할 일과 다른 담당자에게 맡길 일을 구분하나요? 원문 근거를 전달하도록 했나요?",
       "url": "/ko/step-5.html"
     }
   },
@@ -78,14 +78,14 @@
     "id": 6,
     "en": {
       "title": "Connect the roles to collaborate",
-      "goal": "Add food and itinerary specialists and pass each the earlier results it needs.",
-      "check": "Which sightseeing information does the food specialist use? How does the itinerary organizer use both results?",
+      "goal": "Build the operations and communication roles and pass analysis and proposals.",
+      "check": "Does the communicator receive the review, analysis and proposals? Are proposals distinct from completed actions?",
       "url": "/en/step-6.html"
     },
     "ko": {
       "title": "협력하도록 연결하기",
-      "goal": "식사·일정 담당을 추가하고 각자 필요한 앞 담당자의 결과를 전달합니다.",
-      "check": "식사 담당은 관광 담당의 어떤 정보를 사용하나요? 일정 담당은 두 결과를 어떻게 활용하나요?",
+      "goal": "운영 개선·고객 소통 담당을 만들고 분석·제안 결과를 전달합니다.",
+      "check": "소통 담당이 원문·분석·내부 제안을 함께 받나요? 제안과 완료된 조치를 구분하나요?",
       "url": "/ko/step-6.html"
     }
   },
@@ -93,14 +93,14 @@
     "id": 7,
     "en": {
       "title": "Review and improve the team's result",
-      "goal": "Give the team a new travel condition and check its handoffs and final result.",
-      "check": "Did the one-sightseeing request take effect? Does the meal area match, and is the result grounded in earlier recommendations and shared cards?",
+      "goal": "Add reply conditions and check evidence and commitments.",
+      "check": "Are both concerns addressed without unverified improvement claims or compensation promises?",
       "url": "/en/step-7.html"
     },
     "ko": {
       "title": "팀의 결과 검토·개선하기",
-      "goal": "팀에 새로운 여행 조건을 요청하고 역할 간 정보 전달과 최종 결과를 확인합니다.",
-      "check": "관광 한 곳 요청이 반영됐나요? 식사 지역이 맞고, 앞 담당자의 추천과 공통 자료에 근거한 결과인가요?",
+      "goal": "고객 답변에 새 조건을 요청하고 근거와 약속 여부를 검토합니다.",
+      "check": "두 불편 사항을 모두 다루나요? 확인되지 않은 개선 완료나 보상을 약속하지 않나요?",
       "url": "/ko/step-7.html"
     }
   },
