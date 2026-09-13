@@ -34,9 +34,9 @@ For review or feedback, print the table below or copy it into your own notes. Th
 | 2. OpenRouter signup and key creation | | |
 | 3. Sim signup and key connection | | |
 | 4. Create a workflow & prepare inputs | | |
-| 5. Build the first agent & write prompts | | |
-| 6. Add the other roles & handoffs | | |
-| 7. Run, change a request & compare | | |
-| 8. Check saving and reuse | | |
+| 5. Build the first role | | |
+| 6. Connect the roles to collaborate | | |
+| 7. Review and improve the team's result | | |
+| 8. Save and apply it to your own work | | |
 
 Mark steps skipped because of an existing account or key as “skipped”. When recording time, include page loading, email and AI response waits, but exclude breaks unrelated to the exercise.

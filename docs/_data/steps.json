@@ -62,60 +62,60 @@
   {
     "id": 5,
     "en": {
-      "title": "Build the first agent & write prompts",
-      "goal": "Create the sightseeing specialist and distinguish System from User.",
-      "check": "Is Sightseeing Planner connected to Start? Can you explain what its System and User messages do?",
+      "title": "Build the first role",
+      "goal": "Define the sightseeing specialist's responsibilities and required information, then build it.",
+      "check": "Can you distinguish this role's job from the other roles' jobs? What information does it receive and pass on?",
       "url": "/en/step-5.html"
     },
     "ko": {
-      "title": "첫 에이전트·프롬프트 작성",
-      "goal": "관광 담당을 만들고 System과 User의 역할을 구분해 입력합니다.",
-      "check": "Sightseeing Planner가 Start에 연결됐나요? System과 User가 각각 무엇을 전달하는지 설명할 수 있나요?",
+      "title": "첫 역할 만들기",
+      "goal": "관광 담당에게 맡길 일과 필요한 정보를 정하고 첫 역할을 만듭니다.",
+      "check": "관광 담당이 할 일과 다른 담당자에게 맡길 일을 구분할 수 있나요? 어떤 정보를 입력받고 전달하나요?",
       "url": "/ko/step-5.html"
     }
   },
   {
     "id": 6,
     "en": {
-      "title": "Add the other roles & handoffs",
-      "goal": "Create the food and itinerary roles and pass earlier answers to them.",
-      "check": "Are the three agents connected in order? Does Trip Planner's User reference both earlier content outputs?",
+      "title": "Connect the roles to collaborate",
+      "goal": "Add food and itinerary specialists and pass each the earlier results it needs.",
+      "check": "Which sightseeing information does the food specialist use? How does the itinerary organizer use both results?",
       "url": "/en/step-6.html"
     },
     "ko": {
-      "title": "나머지 역할·결과 연결",
-      "goal": "식사·일정 담당을 만들고 앞 담당자의 답변을 연결합니다.",
-      "check": "세 Agent가 순서대로 연결됐나요? Trip Planner의 User가 앞 두 담당자의 content를 참조하나요?",
+      "title": "협력하도록 연결하기",
+      "goal": "식사·일정 담당을 추가하고 각자 필요한 앞 담당자의 결과를 전달합니다.",
+      "check": "식사 담당은 관광 담당의 어떤 정보를 사용하나요? 일정 담당은 두 결과를 어떻게 활용하나요?",
       "url": "/ko/step-6.html"
     }
   },
   {
     "id": 7,
     "en": {
-      "title": "Run, change a request & compare",
-      "goal": "Run your team, change one User request and check the result.",
-      "check": "Did the one-sightseeing request take effect? Have you checked meal areas, rest, fictional labels and evidence?",
+      "title": "Review and improve the team's result",
+      "goal": "Give the team a new travel condition and check its handoffs and final result.",
+      "check": "Did the one-sightseeing request take effect? Does the meal area match, and is the result grounded in earlier recommendations and shared cards?",
       "url": "/en/step-7.html"
     },
     "ko": {
-      "title": "실행·요청 수정·결과 비교",
-      "goal": "직접 만든 팀을 실행하고 User 요청 하나를 바꿔 결과를 확인합니다.",
-      "check": "관광 한 곳 요청이 반영됐나요? 식사 지역·휴식·가상 자료 표시와 근거를 확인했나요?",
+      "title": "팀의 결과 검토·개선하기",
+      "goal": "팀에 새로운 여행 조건을 요청하고 역할 간 정보 전달과 최종 결과를 확인합니다.",
+      "check": "관광 한 곳 요청이 반영됐나요? 식사 지역이 맞고, 앞 담당자의 추천과 공통 자료에 근거한 결과인가요?",
       "url": "/ko/step-7.html"
     }
   },
   {
     "id": 8,
     "en": {
-      "title": "Save & use your team again",
-      "goal": "Reopen the changed team and sketch how an agent team could help with your own task.",
-      "check": "Are your updated request and instructions still present when you reopen the team? Have you noted a goal, roles, handoffs and checks for your own task?",
+      "title": "Save and apply it to your own work",
+      "goal": "Save the team for reuse and sketch roles and collaboration for your own task.",
+      "check": "Can you reopen the team? Have you noted your task's goal, roles, information to pass and checks?",
       "url": "/en/step-8.html"
     },
     "ko": {
-      "title": "저장·다시 사용하기",
-      "goal": "수정한 팀을 다시 열고, 자신의 과제에 적용할 팀의 구상을 적어봅니다.",
-      "check": "팀을 다시 열었을 때 수정한 요청과 지시가 남아 있나요? 자신의 과제를 위한 목표·역할·전달할 내용·확인 기준을 적었나요?",
+      "title": "저장·내 작업에 응용하기",
+      "goal": "팀을 다시 사용할 수 있게 저장하고 자신의 작업을 위한 역할과 협력 구조를 구상합니다.",
+      "check": "팀을 다시 열 수 있나요? 내 작업의 목표·역할·전달할 정보·확인 기준을 적었나요?",
       "url": "/ko/step-8.html"
     }
   }

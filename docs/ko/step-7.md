@@ -2,5 +2,5 @@
 layout: default
 lang: ko
 step: 7
-title: "실행·요청 수정·결과 비교 · AI Agent Hands-On Workshop"
+title: "팀의 결과 검토·개선하기 · AI Agent Hands-On Workshop"
 ---

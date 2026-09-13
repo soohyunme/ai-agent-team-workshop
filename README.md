@@ -1,6 +1,6 @@
 # AI Agent Hands-On Workshop
 
-Beginner-friendly workshop: watch a completed team, build three agents in a new workflow, write System/User prompts, connect their outputs, and reuse the team.
+Beginner-friendly workshop: divide a shared goal into roles, build and connect three agents, review their results, and adapt the approach to your own work. Sim and System/User messages are implementation tools, not the learning goal.
 
 - [English guide](https://soohyunme.github.io/ai-agent-team-workshop/)
 - [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
@@ -15,8 +15,8 @@ Beginner-friendly workshop: watch a completed team, build three agents in a new 
 1. Watch the facilitator demonstrate the completed travel team.
 2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
 3. Add short Start inputs and the shared cards; create and connect the three agents.
-4. Enter each role's System/User prompts, predict the handoffs, then run the team.
-5. Change one User request, check the result, and optionally change one System output rule.
+4. Define each role's job and required information, implement them through System/User messages, then run the team.
+5. Give the itinerary organizer a new travel condition and check how it uses the specialists' results. Optionally improve the output format.
 6. Reopen the saved team and sketch a team for a personal task.
 
 The v0.4 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and shared cards match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks.

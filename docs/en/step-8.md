@@ -2,5 +2,5 @@
 layout: default
 lang: en
 step: 8
-title: "Save & use your team again · AI Agent Hands-On Workshop"
+title: "Save and apply it to your own work · AI Agent Hands-On Workshop"
 ---
