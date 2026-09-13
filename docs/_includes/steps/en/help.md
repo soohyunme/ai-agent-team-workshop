@@ -7,7 +7,7 @@
 | An API key or authentication error appears | Check that `OPENROUTER_API_KEY` is saved in Secrets in the workspace used for this exercise. |
 | `429 Provider returned error` appears | Avoid repeated runs and contact the facilitator. This may be a usage limit or a temporary service restriction. |
 | A payment or upgrade request appears | Contact the facilitator before making a purchase. |
-| AI reports that input information is missing | Check that review and tone in Start contain values. |
+| AI reports that input information is missing | Check that review in Start contains a value. |
 | An earlier answer is not passed on | Check block names, connection order and content references in User. An arrow alone does not insert the answer into a message. |
 | An earlier answer seems to be displayed | Check that you selected the latest run in Logs. |
 | The result changes very little | Check whether it already meets your updated reply requirements. |

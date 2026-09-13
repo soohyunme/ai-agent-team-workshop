@@ -48,14 +48,14 @@
     "id": 4,
     "en": {
       "title": "Create a workflow & prepare inputs",
-      "goal": "Prepare a fictional guest review and reply tone in a new workflow.",
-      "check": "Are Start's review and tone ready? Can you distinguish reported feedback from unknown facts?",
+      "goal": "Prepare a fictional guest review in a new workflow.",
+      "check": "Are Start's review ready? Can you distinguish reported feedback from unknown facts?",
       "url": "/en/step-4.html"
     },
     "ko": {
       "title": "새 워크플로·입력 준비",
-      "goal": "빈 워크플로에 가상 고객 리뷰와 답변 말투를 입력합니다.",
-      "check": "Start의 review·tone이 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
+      "goal": "빈 워크플로에 가상 고객 리뷰를 입력합니다.",
+      "check": "Start의 review이 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
       "url": "/ko/step-4.html"
     }
   },

@@ -14,7 +14,7 @@ Beginner-friendly workshop: divide a shared goal into roles, build and connect t
 
 1. Watch the facilitator demonstrate the completed hotel review response system.
 2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
-3. Add short review and tone inputs; create and connect the three agents.
+3. Add a short review input; create and connect the three agents.
 4. Define each role's job and required information, implement them through System/User messages, then run the team.
 5. Give the guest communicator a new reply requirement and check how it uses the specialists' results. Optionally improve the output format.
 6. Reopen the saved team and sketch a team for a personal task.
@@ -41,6 +41,6 @@ Only participant-facing guides and the selected template are included. Private p
 
 ## Current example
 
-Hotel Review Response Team v1.0 uses two short Start inputs (`review`, `tone`) and three roles: Review Analyst → Operations Advisor → Guest Reply Writer. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
+Hotel Review Response Team v1.0 uses one short Start input (`review`) and three roles: Review Analyst → Operations Advisor → Guest Reply Writer. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
 
 The earlier [travel team v0.4](docs/assets/templates/hong-kong-day-trip-team-starter-v0.4.json) remains an optional reference. Older travel versions are retained for existing links, not part of the main exercise.
