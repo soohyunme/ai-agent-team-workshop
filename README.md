@@ -19,7 +19,7 @@ Beginner-friendly workshop: build a basic multi-agent collaboration structure by
 5. Give the guest communicator a new reply requirement and check how it uses the specialists' results. Optionally improve the output format.
 6. Reopen the saved team and sketch a team for a personal task.
 
-The hotel example v1.0 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and inputs match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks.
+The hotel example v1.0 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and inputs match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks, and the [Korean facilitator script](facilitator-script-ko.md) for spoken instructions, screen actions and participant checkpoints.
 
 No GitHub account, Git or local development setup is needed to read the website. The website contains instructions and a downloadable template; AI requests run through Sim and OpenRouter. This is not a live search or booking service.
 
