@@ -49,13 +49,13 @@
     "en": {
       "title": "Create a workflow & prepare inputs",
       "goal": "Prepare a fictional guest review in a new workflow.",
-      "check": "Is Start's review ready? Can you distinguish reported feedback from unknown facts?",
+      "check": "Is the fictional review entered in Start's review field?",
       "url": "/en/step-4.html"
     },
     "ko": {
       "title": "새 워크플로·입력 준비",
       "goal": "빈 워크플로에 가상 고객 리뷰를 입력합니다.",
-      "check": "Start의 review가 준비됐나요? 리뷰에 있는 의견과 아직 모르는 사실을 구분할 수 있나요?",
+      "check": "Start의 review에 가상 고객 리뷰를 입력했나요?",
       "url": "/ko/step-4.html"
     }
   },
