@@ -46,7 +46,6 @@
     </aside>
     <main id="main" tabindex="-1">
       {% if page.step == 1 or page.full %}
-      <p class="small">{% if language == 'ko' %}최종 업데이트:{% else %}Last updated:{% endif %} <time datetime="{{ site.last_updated }}">{% if language == 'ko' %}{{ site.last_updated | date: '%Y.%m.%d' }}{% else %}{{ site.last_updated | date: '%d %B %Y' }}{% endif %}</time></p>
       {% endif %}
       {% if page.full %}
       <h1>{% if language == 'ko' %}전체 실습 가이드{% else %}The complete workshop guide{% endif %}</h1>
