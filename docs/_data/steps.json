@@ -3,13 +3,13 @@
     "id": 1,
     "en": {
       "title": "Today's exercise & preparation",
-      "goal": "Understand the collaboration through a demonstration and get ready to build.",
+      "goal": "Understand the AI team's roles and collaboration structure, and get ready for the exercise.",
       "check": "Can you describe the three AI roles? Can you access the internet and your email on your laptop?",
       "url": "/"
     },
     "ko": {
       "title": "오늘의 실습과 준비물",
-      "goal": "완성본 시연으로 협력 구조를 이해하고 직접 만들 준비를 합니다.",
+      "goal": "오늘 만들 AI 팀의 역할과 협력 구조를 이해하고 실습을 준비합니다.",
       "check": "세 AI가 각각 어떤 일을 하는지 설명할 수 있나요? 노트북에서 인터넷과 이메일을 이용할 수 있나요?",
       "url": "/ko.html"
     }
