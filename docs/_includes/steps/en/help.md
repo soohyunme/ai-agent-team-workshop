@@ -34,8 +34,8 @@ For review or feedback, print the table below or copy it into your own notes. Th
 | 2. OpenRouter signup and key creation | | |
 | 3. Sim signup and key connection | | |
 | 4. Create a workflow & prepare inputs | | |
-| 5. Build the first role | | |
-| 6. Connect the roles to collaborate | | |
+| 5. Build two specialist roles | | |
+| 6. Build the collaboration structure | | |
 | 7. Run the basic workflow | | |
 | 8. Improve and test the result | | |
 | 9. Save and apply it to your own work | | |

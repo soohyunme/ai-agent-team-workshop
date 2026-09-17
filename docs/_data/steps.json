@@ -62,29 +62,29 @@
   {
     "id": 5,
     "en": {
-      "title": "Build the first role",
-      "goal": "Define and implement the feedback analyst's responsibilities and required information.",
-      "check": "Can you distinguish analysis from the other roles' jobs? Does the analyst pass original evidence?",
+      "title": "Build two specialist roles",
+      "goal": "Build two independent specialists that process the same review from different perspectives.",
+      "check": "Do the analyst and operations advisor have distinct responsibilities and both receive the original review?",
       "url": "/en/step-5.html"
     },
     "ko": {
-      "title": "첫 역할 만들기",
-      "goal": "고객 의견 분석 담당의 책임과 필요한 정보를 정하고 구현합니다.",
-      "check": "분석 담당이 할 일과 다른 담당자에게 맡길 일을 구분하나요? 원문 근거를 전달하도록 했나요?",
+      "title": "전문 역할 두 개 만들기",
+      "goal": "같은 리뷰를 서로 다른 관점으로 처리하는 두 전문 역할을 만듭니다.",
+      "check": "분석 담당과 운영 담당의 책임이 구분되고 두 역할 모두 원문 리뷰를 받나요?",
       "url": "/ko/step-5.html"
     }
   },
   {
     "id": 6,
     "en": {
-      "title": "Connect the roles to collaborate",
-      "goal": "Build an independent operations role and connect both results to the communicator.",
+      "title": "Build the collaboration structure",
+      "goal": "Build the guest communicator and pass both specialists' results into one reply draft.",
       "check": "Does the communicator receive the review, analysis and proposals? Can you explain why each is passed on?",
       "url": "/en/step-6.html"
     },
     "ko": {
-      "title": "협력하도록 연결하기",
-      "goal": "독립적으로 일하는 운영 담당을 만들고 두 결과를 소통 담당에게 연결합니다.",
+      "title": "협력 구조 만들기",
+      "goal": "고객 소통 담당을 만들고 두 전문 역할의 결과를 하나의 답변 초안으로 취합합니다.",
       "check": "소통 담당이 원문·분석·내부 제안을 함께 받나요? 각 결과를 전달하는 이유를 설명할 수 있나요?",
       "url": "/ko/step-6.html"
     }
