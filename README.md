@@ -4,19 +4,19 @@ A beginner-friendly, hands-on introduction to multi-agent systems. Build and run
 
 **Assign roles. Pass information. Combine and improve results.**
 
-No programming experience or local installation is required. Bring a laptop with a web browser, internet access and access to your email for account verification.
-
 ## Start the workshop
 
 - **[Workshop guide](https://soohyunme.github.io/ai-agent-team-workshop/)**
-- After the presentation, begin with **[Step 2: OpenRouter setup](https://soohyunme.github.io/ai-agent-team-workshop/en/step-2.html)**.
+- **[Start the hands-on exercise at Step 2](https://soohyunme.github.io/ai-agent-team-workshop/en/step-2.html)** after the concept presentation and GitHub sign-up or sign-in.
 - [All steps on one page](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
 
-The 90-minute workshop starts with a short concept introduction and GitHub sign-in, then follows the guide together. You do not need a GitHub account to read the materials.
+**Duration:** 90 minutes, including setup and the core exercise. The extension is optional.
+
+**Bring:** a laptop, a web browser, internet access and access to your email for account verification. No programming experience or local software installation is required. You do not need a GitHub account to read the guide.
 
 ## What you will build
 
-Three agents handle the same fictional hotel review from different perspectives:
+Build a workflow that turns a fictional guest review into feedback analysis, internal improvement proposals and a guest reply draft.
 
 | Agent | Job |
 | --- | --- |
@@ -26,6 +26,8 @@ Three agents handle the same fictional hotel review from different perspectives:
 
 ```mermaid
 flowchart LR
+    accTitle: Hotel review response workflow
+    accDescr: The Review Analyst Agent and Operations Advisor Agent independently read the guest review. The Guest Reply Writer Agent uses the original review and both results to produce a reply draft.
     S["Start · Guest review"] --> A["Review Analyst Agent"]
     S --> B["Operations Advisor Agent"]
     A -->|Analysis| C["Guest Reply Writer Agent"]
@@ -33,61 +35,58 @@ flowchart LR
     C --> R["Guest reply draft"]
 ```
 
-The first two agents work independently. The reply writer then uses the original review and both results. The draft is the output, not a fourth agent.
+The analyst and operations advisor work independently. Once both finish, the reply writer uses the original review and their results. “Guest reply draft” is the output, not an extra block to create.
 
-One AI can write a reply. Dividing the work makes it easier to review and improve each agent's output. In this exercise, you define the roles and connections; the agents do not choose their own team structure.
+One AI can write a reply. Here, separating the roles lets you inspect and improve each contribution. You define the roles and connections, then the agents run within that structure.
 
 ## Build first, then improve
 
-1. **Set up — steps 2–3.** Sign in to OpenRouter and Sim and connect your API key.
-2. **Build — steps 4–6.** Start with an empty workflow. Add the review, create three agents, write their instructions and connect their inputs and results.
-3. **Run — step 7.** Run the basic workflow and inspect what each agent produces.
-4. **Improve — step 8.** Change the reply writer's request and compare the result. Try a more challenging fictional complaint if time allows.
-5. **Extend — step 9, optional.** Design a team for your own task. Start if time remains, or continue after the workshop.
+1. **Set up — steps 2–3.** Create or sign in to your OpenRouter and Sim accounts, then connect them using an API key.
+2. **Build — steps 4–6.** Start with an empty workflow. Add the review, create three agents, write short instructions and connect the roles. Prompt examples are available to copy when needed.
+3. **Run — step 7.** Run the basic workflow and inspect each agent's output and the final reply.
+4. **Improve — step 8.** Change the reply writer's request to produce a shorter answer that still addresses every concern. Compare the results; try a more challenging complaint if time allows.
 
-The core exercise finishes at step 8. You do not need to build a second team during the session.
+**Optional extension — step 9:** design and build an agent team for your own task. Begin if time remains or continue after the workshop; the core exercise ends at step 8.
 
 ## Tools used
 
 - **Sim:** arrange the agents, give them instructions and run the workflow.
 - **OpenRouter:** connect the workflow to AI models.
-- **GitHub:** find the materials and use a common sign-in option for the workshop services. Existing service accounts can also be used.
+- **GitHub:** access the workshop materials and sign in to the workshop services. You can also use existing service accounts.
 
-Sim is the tool for this exercise, not the learning goal or the only way to build agents. Focus on which roles you need, what information they share and how you check their results.
+Sim is our practice tool. The goal is to learn how to assign roles, pass information and check results—principles you can apply with other tools as well.
 
-The guide uses a free-model configuration. Availability and usage limits still apply; free access is not unlimited. Keep API keys private, and ask the facilitator before purchasing or upgrading anything during the workshop.
+The exercise is configured to request a free model, but usage and availability limits apply. Keep API keys private. If a service asks for payment, check with the facilitator before purchasing anything.
 
 ## Make it your own
 
-Choose a task and define its **goal, roles, information handoffs and checks**. For example, a presentation workflow might summarize supplied materials, draft an outline and check the evidence. Your task may need a sequence rather than today's parallel structure—or only one AI.
+Choose a task and define its **goal, roles, information to share and checks**. A presentation workflow, for example, could summarize supplied materials, draft an outline and check the evidence. Choose the structure that fits your task: independent roles, a sequence, or simply one AI.
 
-Your own know-how can become instructions, examples, checklists and reference material for each role. Review the results and refine that guidance over time. This adapts the agent's instructions and context; it does not automatically retrain the underlying model.
+Turn your own know-how into instructions, examples and checklists for each role, then refine them as you review the results. This customizes the agent's guidance; it does not automatically retrain the AI model.
 
-## Reference workflow
+## Completed example
 
 [Download the completed hotel review example · Sim JSON](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hotel-review-response-team-example-v1.0.json)
 
-This is a reference and recovery option, not the main exercise. Participants normally build the workflow themselves. If you get stuck, follow the import instructions in step 4 with the facilitator's help. Importing the example still requires your own working model connection.
+You will normally build the workflow yourself. If you get stuck, use the [import instructions in step 4](https://soohyunme.github.io/ai-agent-team-workshop/en/step-4.html) with the facilitator's help. The example still needs your OpenRouter API key configured in Sim.
 
 ## Questions and feedback
 
-- Found an issue in the materials? [Open a GitHub issue](https://github.com/soohyunme/ai-agent-team-workshop/issues).
-- Questions after the session? [Message Soohyun Kim on LinkedIn](https://www.linkedin.com/in/soohyun-dev/).
-- Want to find the materials again? You can star this repository. It is optional.
+For questions, problems with the materials or suggestions, [message Soohyun Kim on LinkedIn](https://www.linkedin.com/in/soohyun-dev/). Do not include API keys in messages or screenshots.
+
+To find the materials again, you can select **Star** at the top of this repository. This is optional.
 
 <details>
 <summary>Maintaining the guide</summary>
 
-The default guide is nine separate pages with previous/next navigation. The full-guide page reuses the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
+- Step content: `docs/_includes/steps/en/`
+- Step titles, navigation and completion checks: `docs/_data/steps.json`
+- Layout and styling: `docs/_layouts/` and `docs/assets/style.css`
+- Completed workflow: `docs/assets/templates/hotel-review-response-team-example-v1.0.json`
+- Embedded copy for step 4: `docs/_includes/template-copy.json`
 
-Edit the step text in `docs/_includes/steps/en/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md` and `docs/en/step-*.md` select each page; they do not duplicate the lesson content.
+GitHub Pages builds from `main` → `/docs`. The step pages and full-guide page reuse the same content.
 
-The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The literal key placeholder is protected with Liquid raw tags in the step content so that it remains visible after the Pages build.
-
-GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No external fonts, analytics or local build dependencies are required. The small layout and stylesheet are in `docs/_layouts/` and `docs/assets/`. A small script supports the optional copy button in step 4; manual selection and copying work without JavaScript.
-
-Step 4 embeds a download fallback in `docs/_includes/template-copy.json`, wrapped in Liquid raw tags. Keep its JSON identical to `docs/assets/templates/hotel-review-response-team-example-v1.0.json` when updating the template. This embeds the contents in the guide rather than fetching the download URL again.
-
-Keep facilitator scripts and private preparation notes outside this public repository. When changing the workflow, keep the guide prompts, template and embedded copy consistent, and check import and execution in Sim.
+When changing the workflow, keep the guide prompts, completed example and embedded copy consistent, then test import and execution in Sim. Preserve the Liquid raw tags around template contents and `{{OPENROUTER_API_KEY}}` references. Never commit actual API keys.
 
 </details>
