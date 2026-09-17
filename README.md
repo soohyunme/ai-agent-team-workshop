@@ -15,9 +15,10 @@ Beginner-friendly workshop: build a basic multi-agent collaboration structure by
 1. Watch the facilitator demonstrate the completed hotel review response system.
 2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
 3. Add a short review input; create and connect the three agents.
-4. Define each role's job and required information, implement them through System/User messages, then run the team.
-5. Give the guest communicator a new reply requirement and check how it uses the specialists' results. Optionally improve the output format.
-6. Reopen the saved team and sketch a team for a personal task.
+4. Define each role's job and required information, implement them through System/User messages, then run the basic workflow once.
+5. Inspect the three outputs before changing anything.
+6. Give the guest communicator a new reply requirement and compare the improved result. Optionally test the same team with an escalated fictional complaint.
+7. Reopen the saved team and sketch a team for a personal task.
 
 The hotel example v1.0 template is now the demonstration, reference and recovery asset, not the main participant path. Its prompts and inputs match the construction guide. See [the facilitator plan](facilitator-plan.md) for timing and rehearsal checks, and the [English live facilitation script](facilitator-script-en.md) for spoken instructions, screen actions and participant checkpoints. The [Korean rehearsal script](facilitator-script-ko.md) is available as a reference.
 
@@ -25,7 +26,7 @@ No GitHub account, Git or local development setup is needed to read the website.
 
 ## Maintaining the guide
 
-The default guide is eight separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
+The default guide is nine separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
 
 The participant pages display the material's last-updated date, set in `docs/_config.yml` as `last_updated`. Update it when revising the published guide. Validation status is tracked above and is not implied by the update date.
 

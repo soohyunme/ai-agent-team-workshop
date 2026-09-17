@@ -16,7 +16,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if language == 'ko' %}호텔 리뷰 대응 예시로 역할 분담·정보 전달·결과 취합이라는 멀티 에이전트의 기본 협력 구조를 직접 만드는 8단계 실습 가이드.{% else %}An eight-step guide to building basic multi-agent collaboration through role assignment, information sharing and combining results, using a hotel review example.{% endif %}">
+  <meta name="description" content="{% if language == 'ko' %}호텔 리뷰 대응 예시로 역할 분담·정보 전달·결과 취합이라는 멀티 에이전트의 기본 협력 구조를 직접 만드는 9단계 실습 가이드.{% else %}A nine-step guide to building basic multi-agent collaboration through role assignment, information sharing and combining results, using a hotel review example.{% endif %}">
   <title>{{ page.title | escape }}</title>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
@@ -52,7 +52,7 @@
       <h1>{% if language == 'ko' %}전체 실습 가이드{% else %}The complete workshop guide{% endif %}</h1>
       <p>{% if language == 'ko' %}모든 단계를 한 페이지에서 읽거나 인쇄할 수 있습니다. 단계별로 진행하려면 단계 목록에서 원하는 페이지를 선택하세요.{% else %}Read or print all steps on one page. To follow the exercise one step at a time, choose a page from the step list.{% endif %}</p>
       {% else %}
-      <p class="step-progress">{% if language == 'ko' %}8단계 중 {{ page.step }}단계{% else %}Step {{ page.step }} of 8{% endif %}</p>
+      <p class="step-progress">{% if language == 'ko' %}{{ steps.size }}단계 중 {{ page.step }}단계{% else %}Step {{ page.step }} of {{ steps.size }}{% endif %}</p>
       {% endif %}
       <article>
         {% for item in visible_steps %}
@@ -63,7 +63,7 @@
             {% capture step_file %}steps/{{ language }}/{{ item.id }}.md{% endcapture %}
             {% capture step_body %}{% include {{ step_file }} %}{% endcapture %}
             {{ step_body | markdownify }}
-            <div class="completion"><strong>{% if item.id == 8 %}{% if language == 'ko' %}실습을 마치기 전에{% else %}Check before finishing{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
+            <div class="completion"><strong>{% if item.id == steps.size %}{% if language == 'ko' %}실습을 마치기 전에{% else %}Check before finishing{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
           </section>
         {% endfor %}
         {% if page.full %}
@@ -79,7 +79,7 @@
           {% assign previous = steps[previous_index] %}
           <a class="page-button previous" rel="prev" href="{{ previous[language].url | relative_url }}"><span>← {% if language == 'ko' %}이전{% else %}Previous{% endif %}</span>{{ previous[language].title }}</a>
         {% endif %}
-        {% if page.step < 8 %}
+        {% if page.step < steps.size %}
           {% assign next_index = page.step %}
           {% assign next_step = steps[next_index] %}
           <a class="page-button next" rel="next" href="{{ next_step[language].url | relative_url }}"><span>{% if language == 'ko' %}다음{% else %}Next{% endif %} →</span>{{ next_step[language].title }}</a>

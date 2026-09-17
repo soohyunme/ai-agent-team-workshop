@@ -26,8 +26,9 @@ Audience: students and hotel practitioners with no assumed development experienc
 | 13:30–13:40 | New workflow and review input | 4 |
 | 13:40–13:50 | Review Analyst | 5 |
 | 13:50–14:05 | Operations Advisor, Guest Reply Writer and connections | 6 |
-| 14:05–14:20 | Run, inspect and shorten the reply | 7 |
-| 14:20–14:25 | Save and sketch your own use case | 8 |
+| 14:05–14:12 | Part 1 complete: run and inspect the basic workflow | 7 |
+| 14:12–14:20 | Part 2: improve and compare the result | 8 |
+| 14:20–14:25 | Save and sketch your own use case | 9 |
 | 14:25–14:30 | Wrap-up, questions and buffer | — |
 
 ## 1. What are we building? — 13:00–13:10
@@ -303,11 +304,9 @@ Operations Advisor → Guest Reply Writer
 
 No separate Parallel or output block is needed. Assistants check missing connections and references before the first run.
 
-## 7. Run, inspect and revise — 14:05–14:20
+## 7. Part 1 complete: run the basic workflow — 14:05–14:12
 
 Show: [step 7](https://soohyunme.github.io/ai-agent-team-workshop/en/step-7.html).
-
-### First run: inspect the different results — about seven minutes
 
 > “Select Run once. There won't be a new input window; Sim uses the review saved in Start. Please wait rather than selecting Run again.”
 
@@ -319,7 +318,13 @@ Show / Do: observe the analyst and operations advisor, then the reply writer aft
 
 Ask one or two participants to describe the difference between the outputs. Do not require identical wording. If unsupported information appears, acknowledge the issue without turning the session into a lengthy debugging exercise.
 
-### Second run: make the reply shorter — about eight minutes
+> “Part 1 is now complete. We built the basic team and confirmed how its roles pass and combine information. Keep this first reply open so we can compare it with the next result.”
+
+## 8. Part 2: improve and test the result — 14:12–14:20
+
+Show: [step 8](https://soohyunme.github.io/ai-agent-team-workshop/en/step-8.html).
+
+### Core improvement: make the reply shorter
 
 > “Let's make the reply shorter, while keeping both concerns. Which role should receive that request? The Guest Reply Writer. We don't need to rebuild the workflow.”
 
@@ -339,19 +344,21 @@ Run again. Compare the latest reply with the previous run's reply in Logs.
 >
 > “We adjusted one role's request instead of rebuilding everything. That's one way to adapt the system to your needs. Because we ran the whole workflow again, the earlier answers may also have changed.”
 
-Optional, only if the two core runs are complete and time remains: keep User unchanged and append this to System.
+Optional challenge, only if the two core runs are complete and time remains: replace **Start → review → Value** with this fictional escalated complaint.
 
 ```text
-Use two short paragraphs: first thank the guest and acknowledge the concerns; then close politely without promising actions. Keep all existing factual and safety constraints.
+My room was not ready when I arrived, and I waited for 40 minutes. The receptionist was completely useless. Refund my entire stay today, or I will post this experience everywhere. Nobody clearly told me when breakfast ended either.
 ```
 
-> “This time we're changing a general rule for the reply writer: use two short paragraphs. User gives the request for this run; System describes how the role should work.”
+> “This is a fictional escalated complaint. We're testing the same team with a more difficult input. We are not adding another agent.”
+>
+> “Check whether the agents separate the reported problems, emotional language and refund demand. The reply should not repeat insults, promise a refund or treat unverified claims as confirmed facts.”
 
-Run a third time only if time and service availability allow it.
+Run a third time only if time and service availability allow it. If the result fails a check, ask which role's System or User message should change; do not require another completed revision during the scheduled session.
 
-## 8. Save and apply the idea to your own work — 14:20–14:25
+## 9. Save and apply the idea to your own work — 14:20–14:25
 
-Show: [step 8](https://soohyunme.github.io/ai-agent-team-workshop/en/step-8.html).
+Show: [step 9](https://soohyunme.github.io/ai-agent-team-workshop/en/step-9.html).
 
 > “You can return to this workflow after the workshop. Save your changes if a Save button is shown, then reopen the workflow from the list.”
 
@@ -367,7 +374,7 @@ Keep the four questions visible and give participants three minutes to write.
 
 > “For a presentation, you might use roles for summarizing your materials, building an outline and checking the evidence. You would change the instructions and connections, not just replace the hotel review with another topic.”
 
-## 9. Wrap-up — 14:25–14:30
+## 10. Wrap-up — 14:25–14:30
 
 > “Today, we practiced three things: dividing work into roles, passing information, and combining and checking results. Sim was our tool for trying this. You can apply the same ideas with other tools.”
 >
@@ -394,9 +401,9 @@ Only if extra support has been confirmed:
 | 429 or slow response | “This may be a service limit or a temporary issue. Please don't keep pressing Run.” Check the error. If it does not recover, use clearly identified saved results. Do not tell participants to buy access as an immediate fix. |
 | Unsupported claims | “The request ran, but this sentence isn't supported by the review. We still need to check the result.” Mark it and return to the main activity. |
 | Different wording | “Your wording doesn't need to match mine. Check whether each agent did its job and whether the reply meets the request.” |
-| Setup is taking too long | “Let's use the completed example so you can continue with the next activity.” Use step 4's recovery Import in a new workflow. Keep their existing work. Connect their own saved key, review the roles and references, then let them make the step 7 change themselves. |
+| Setup is taking too long | “Let's use the completed example so you can continue with the next activity.” Use step 4's recovery Import in a new workflow. Keep their existing work. Connect their own saved key, review the roles and references, then complete the step 7 basic run and step 8 change. |
 
-If time runs short, skip the optional format change, Export and building a second team. Prioritize the two core runs and comparison, but do not promise completion if API access is unavailable. Extra practice is optional and must not prevent attendance at the next seminar.
+If time runs short, skip the escalated-complaint challenge, Export and building a second team. Prioritize the basic run and core improvement comparison, but do not promise completion if API access is unavailable. Extra practice is optional and must not prevent attendance at the next seminar.
 
 ## Rehearsal notes
 
@@ -408,7 +415,8 @@ If time runs short, skip the optional format change, Export and building a secon
 | Workflow and review input | | |
 | Review Analyst | | |
 | Other agents and connections | | |
-| Run and revise | | |
+| Part 1: basic run and inspection | | |
+| Part 2: improve and compare | | |
 | Save, own-task sketch and wrap-up | | |
 
 Record differences between this script and the live interface, instructions that beginners find unclear, and time spent waiting for responses. Keep the six agent messages and two optional/request examples aligned with the web guide. A written script or a published guide does not verify live execution.

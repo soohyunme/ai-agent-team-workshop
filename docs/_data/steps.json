@@ -92,31 +92,46 @@
   {
     "id": 7,
     "en": {
-      "title": "Review and improve the team's result",
-      "goal": "Review how the roles work together, then request a shorter reply and compare the results.",
-      "check": "Is the reply under 90 words with both concerns included? Can you explain which role's request you changed?",
+      "title": "Run the basic workflow",
+      "goal": "Run the completed team once and trace what each role produces and passes on.",
+      "check": "Did all three agents complete their assigned jobs? Can you trace how the two earlier results reach the reply writer?",
       "url": "/en/step-7.html"
     },
     "ko": {
-      "title": "팀의 결과 검토·개선하기",
-      "goal": "역할 간 협력 결과를 확인한 뒤, 답변을 짧게 요청하고 전후 결과를 비교합니다.",
-      "check": "답변이 두 불편 사항을 포함하면서 영어 90단어 미만인가요? 어느 역할의 요청을 바꿨는지 설명할 수 있나요?",
+      "title": "기본 워크플로 실행하기",
+      "goal": "완성한 팀을 한 번 실행하고 각 역할이 만든 결과와 전달 과정을 확인합니다.",
+      "check": "세 에이전트가 맡은 일을 수행했나요? 앞의 두 결과가 고객 소통 담당에게 어떻게 전달됐는지 설명할 수 있나요?",
       "url": "/ko/step-7.html"
     }
   },
   {
     "id": 8,
     "en": {
+      "title": "Improve and test the result",
+      "goal": "Change one role's request, compare the new result, and optionally test a more challenging complaint.",
+      "check": "Is the reply under 90 words with both concerns included? Can you explain what you changed and what you checked?",
+      "url": "/en/step-8.html"
+    },
+    "ko": {
+      "title": "결과 개선·시험하기",
+      "goal": "한 역할의 요청을 수정해 결과를 비교하고, 선택 활동으로 더 까다로운 컴플레인을 시험합니다.",
+      "check": "답변이 두 불편 사항을 포함하면서 영어 90단어 미만인가요? 무엇을 바꾸고 어떤 결과를 확인했는지 설명할 수 있나요?",
+      "url": "/ko/step-8.html"
+    }
+  },
+  {
+    "id": 9,
+    "en": {
       "title": "Save and apply it to your own work",
       "goal": "Save the team for reuse and sketch roles and collaboration for your own task.",
       "check": "Can you reopen the team? Have you noted your task's goal, roles, information to pass and checks?",
-      "url": "/en/step-8.html"
+      "url": "/en/step-9.html"
     },
     "ko": {
       "title": "저장·내 작업에 응용하기",
       "goal": "팀을 다시 사용할 수 있게 저장하고 자신의 작업을 위한 역할과 협력 구조를 구상합니다.",
       "check": "팀을 다시 열 수 있나요? 내 작업의 목표·역할·전달할 정보·확인 기준을 적었나요?",
-      "url": "/ko/step-8.html"
+      "url": "/ko/step-9.html"
     }
   }
 ]
