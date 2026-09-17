@@ -1,34 +1,86 @@
 # AI Agent Hands-On Workshop
 
-Beginner-friendly workshop: build a basic multi-agent collaboration structure by assigning roles, passing information and combining results. Apply this approach to design and use collaboration patterns for your own assignments or tasks of interest. Sim and System/User messages are implementation tools, not the learning goal.
+A beginner-friendly, hands-on introduction to multi-agent systems. Build and run a hotel review response workflow, then learn how to adapt the same approach to your own assignments or work.
 
-- [English guide](https://soohyunme.github.io/ai-agent-team-workshop/)
-- [한국어 가이드](https://soohyunme.github.io/ai-agent-team-workshop/ko.html)
-- [Full English guide](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
-- [한국어 전체 보기](https://soohyunme.github.io/ai-agent-team-workshop/ko/all.html)
-- [Download the Sim template](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hotel-review-response-team-example-v1.0.json)
+**Assign roles. Pass information. Combine and improve results.**
 
-**Validation status: pre-release.** The new build-from-scratch path, live execution of the hotel example v1.0 example, beginner signup timing, PolyU access and class-scale usage remain to be tested. Publishing the guide does not verify the workflow.
+No programming experience or local installation is required. Bring a laptop with a web browser, internet access and access to your email for account verification.
 
-## What participants do
+## Start the workshop
 
-1. Watch the facilitator demonstrate the completed hotel review response system.
-2. Sign in to OpenRouter and Sim, connect a personal key, and create a new workflow.
-3. Add a short review input; create and connect the three agents.
-4. Define each role's job and required information, implement them through System/User messages, then run the basic workflow once.
-5. Inspect the three outputs before changing anything.
-6. Give the guest communicator a new reply requirement and compare the improved result. Optionally test the same team with an escalated fictional complaint.
-7. Reopen the saved team and sketch a team for a personal task.
+- **[Workshop guide](https://soohyunme.github.io/ai-agent-team-workshop/)**
+- After the presentation, begin with **[Step 2: OpenRouter setup](https://soohyunme.github.io/ai-agent-team-workshop/en/step-2.html)**.
+- [All steps on one page](https://soohyunme.github.io/ai-agent-team-workshop/all.html)
 
-The hotel example v1.0 template is the demonstration, reference and recovery asset, not the main participant path. Its prompts and inputs match the construction guide.
+The 90-minute workshop starts with a short concept introduction and GitHub sign-in, then follows the guide together. You do not need a GitHub account to read the materials.
 
-No GitHub account, Git or local development setup is needed to read the website. The website contains instructions and a downloadable template; AI requests run through Sim and OpenRouter. This is not a live search or booking service.
+## What you will build
 
-## Maintaining the guide
+Three agents handle the same fictional hotel review from different perspectives:
 
-The default guide is nine separate pages with previous/next navigation. Language switching keeps the same step. The full-guide pages reuse the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
+| Agent | Job |
+| --- | --- |
+| **Review Analyst** | Identify positive feedback and concerns with evidence from the review. |
+| **Operations Advisor** | Suggest internal checks and improvements. |
+| **Guest Reply Writer** | Use the review and both results to draft a guest reply. |
 
-Edit the English and Korean step text in `docs/_includes/steps/en/` and `docs/_includes/steps/ko/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md`, `docs/ko.md` and `docs/en/step-*.md` / `docs/ko/step-*.md` select each page; they do not duplicate the lesson content.
+```mermaid
+flowchart LR
+    S["Start · Guest review"] --> A["Review Analyst Agent"]
+    S --> B["Operations Advisor Agent"]
+    A -->|Analysis| C["Guest Reply Writer Agent"]
+    B -->|Proposals| C
+    C --> R["Guest reply draft"]
+```
+
+The first two agents work independently. The reply writer then uses the original review and both results. The draft is the output, not a fourth agent.
+
+One AI can write a reply. Dividing the work makes it easier to review and improve each agent's output. In this exercise, you define the roles and connections; the agents do not choose their own team structure.
+
+## Build first, then improve
+
+1. **Set up — steps 2–3.** Sign in to OpenRouter and Sim and connect your API key.
+2. **Build — steps 4–6.** Start with an empty workflow. Add the review, create three agents, write their instructions and connect their inputs and results.
+3. **Run — step 7.** Run the basic workflow and inspect what each agent produces.
+4. **Improve — step 8.** Change the reply writer's request and compare the result. Try a more challenging fictional complaint if time allows.
+5. **Extend — step 9, optional.** Design a team for your own task. Start if time remains, or continue after the workshop.
+
+The core exercise finishes at step 8. You do not need to build a second team during the session.
+
+## Tools used
+
+- **Sim:** arrange the agents, give them instructions and run the workflow.
+- **OpenRouter:** connect the workflow to AI models.
+- **GitHub:** find the materials and use a common sign-in option for the workshop services. Existing service accounts can also be used.
+
+Sim is the tool for this exercise, not the learning goal or the only way to build agents. Focus on which roles you need, what information they share and how you check their results.
+
+The guide uses a free-model configuration. Availability and usage limits still apply; free access is not unlimited. Keep API keys private, and ask the facilitator before purchasing or upgrading anything during the workshop.
+
+## Make it your own
+
+Choose a task and define its **goal, roles, information handoffs and checks**. For example, a presentation workflow might summarize supplied materials, draft an outline and check the evidence. Your task may need a sequence rather than today's parallel structure—or only one AI.
+
+Your own know-how can become instructions, examples, checklists and reference material for each role. Review the results and refine that guidance over time. This adapts the agent's instructions and context; it does not automatically retrain the underlying model.
+
+## Reference workflow
+
+[Download the completed hotel review example · Sim JSON](https://soohyunme.github.io/ai-agent-team-workshop/assets/templates/hotel-review-response-team-example-v1.0.json)
+
+This is a reference and recovery option, not the main exercise. Participants normally build the workflow themselves. If you get stuck, follow the import instructions in step 4 with the facilitator's help. Importing the example still requires your own working model connection.
+
+## Questions and feedback
+
+- Found an issue in the materials? [Open a GitHub issue](https://github.com/soohyunme/ai-agent-team-workshop/issues).
+- Questions after the session? [Message Soohyun Kim on LinkedIn](https://www.linkedin.com/in/soohyun-dev/).
+- Want to find the materials again? You can star this repository. It is optional.
+
+<details>
+<summary>Maintaining the guide</summary>
+
+The default guide is nine separate pages with previous/next navigation. The full-guide page reuses the same content for review and printing. Participant-facing instructions use direct actions and question-based checks; facilitation and validation notes should remain separate from those instructions.
+
+Edit the step text in `docs/_includes/steps/en/`. Titles, tasks, completion checks and URLs are in `docs/_data/steps.json`. The files `docs/index.md` and `docs/en/step-*.md` select each page; they do not duplicate the lesson content.
 
 The template lives in `docs/assets/templates/`. Keep actual API keys out of all files; the template uses only `{{OPENROUTER_API_KEY}}`. The literal key placeholder is protected with Liquid raw tags in the step content so that it remains visible after the Pages build.
 
@@ -36,10 +88,6 @@ GitHub Pages publishes `main` → `/docs` using its built-in Jekyll build. No ex
 
 Step 4 embeds a download fallback in `docs/_includes/template-copy.json`, wrapped in Liquid raw tags. Keep its JSON identical to `docs/assets/templates/hotel-review-response-team-example-v1.0.json` when updating the template. This embeds the contents in the guide rather than fetching the download URL again.
 
-Only participant-facing guides and the selected template are included. Private preparation notes, conversation screenshots and the event proposal are not part of this repository.
+Keep facilitator scripts and private preparation notes outside this public repository. When changing the workflow, keep the guide prompts, template and embedded copy consistent, and check import and execution in Sim.
 
-## Current example
-
-Hotel Review Response Team v1.0 uses one short Start input (`review`) and three roles: Review Analyst and Operations Advisor working independently from the same review, then Guest Reply Writer combining both results. No shared cards variable is required. All reviews are fictional; actions are internal proposals, and replies are unsent drafts for human review. Manual build prompts match this example. Actual Sim import and execution still require validation.
-
-The earlier [travel team v0.4](docs/assets/templates/hong-kong-day-trip-team-starter-v0.4.json) remains an optional reference. Older travel versions are retained for existing links, not part of the main exercise.
+</details>
