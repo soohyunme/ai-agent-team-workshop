@@ -14,30 +14,3 @@
 | A requested condition is not followed | Mark the issue and compare it with the original request and instructions. Ask the facilitator if needed. |
 
 When asking for help, share the step number and error message. **Keep API keys out of the screen or screenshot you share.**
-
-<h2 id="timing">Reflect on the exercise</h2>
-
-Use these questions to review what you have learned.
-
-- What job did each of the three agents perform?
-- What did the analyst and operations advisor each produce from the same review? How did the communicator use both results?
-- How does changing the reply request differ from changing an agent's instructions?
-- What would you like to use this team for next?
-
-### Optional: record your progress
-
-For review or feedback, print the table below or copy it into your own notes. This is not an online form; entries are not saved or submitted automatically.
-
-| Step | Time spent | Difficulties or points to check |
-| --- | --- | --- |
-| 1. Understand the team and preparation | | |
-| 2. OpenRouter signup and key creation | | |
-| 3. Sim signup and key connection | | |
-| 4. Create a workflow & prepare inputs | | |
-| 5. Build two specialist roles | | |
-| 6. Build the collaboration structure | | |
-| 7. Run the basic workflow | | |
-| 8. Improve and test the result | | |
-| 9. Extension: design your own agent team | | |
-
-Mark steps skipped because of an existing account or key as “skipped”. When recording time, include page loading, email and AI response waits, but exclude breaks unrelated to the exercise.

@@ -41,7 +41,6 @@
         </ol>
         <a class="help-link" href="{{ full_url | relative_url }}"{% if page.full %} aria-current="page"{% endif %}>{% if language == 'ko' %}전체 보기 · 인쇄{% else %}Full guide · Print{% endif %}</a>
         <a class="help-link" href="{{ full_url | relative_url }}#help">{% if language == 'ko' %}문제 해결{% else %}Troubleshooting{% endif %}</a>
-        <a class="help-link" href="{{ full_url | relative_url }}#timing">{% if language == 'ko' %}실습 돌아보기{% else %}Reflect on the exercise{% endif %}</a>
       </nav>
     </aside>
     <main id="main" tabindex="-1">
@@ -62,7 +61,7 @@
             {% capture step_file %}steps/{{ language }}/{{ item.id }}.md{% endcapture %}
             {% capture step_body %}{% include {{ step_file }} %}{% endcapture %}
             {{ step_body | markdownify }}
-            <div class="completion"><strong>{% if item.id == steps.size %}{% if language == 'ko' %}실습을 마치기 전에{% else %}Check before finishing{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
+            <div class="completion"><strong>{% if item.id == steps.size %}{% if language == 'ko' %}선택 활동 확인{% else %}Optional activity check{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
           </section>
         {% endfor %}
         {% if page.full %}
@@ -82,8 +81,6 @@
           {% assign next_index = page.step %}
           {% assign next_step = steps[next_index] %}
           <a class="page-button next" rel="next" href="{{ next_step[language].url | relative_url }}"><span>{% if language == 'ko' %}다음{% else %}Next{% endif %} →</span>{{ next_step[language].title }}</a>
-        {% else %}
-          <a class="page-button next" href="{{ full_url | relative_url }}#timing"><span>{% if language == 'ko' %}실습 마무리{% else %}Complete the workshop{% endif %} →</span>{% if language == 'ko' %}배운 내용 정리하기{% else %}Reflect on what you learned{% endif %}</a>
         {% endif %}
       </nav>
       {% endif %}
