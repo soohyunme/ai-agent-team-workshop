@@ -38,6 +38,6 @@ For review or feedback, print the table below or copy it into your own notes. Th
 | 6. Build the collaboration structure | | |
 | 7. Run the basic workflow | | |
 | 8. Improve and test the result | | |
-| 9. Save and apply it to your own work | | |
+| 9. Extension: design your own agent team | | |
 
 Mark steps skipped because of an existing account or key as “skipped”. When recording time, include page loading, email and AI response waits, but exclude breaks unrelated to the exercise.

@@ -122,15 +122,15 @@
   {
     "id": 9,
     "en": {
-      "title": "Save and apply it to your own work",
-      "goal": "Save the team for reuse and sketch roles and collaboration for your own task.",
-      "check": "Can you reopen the team? Have you noted your task's goal, roles, information to pass and checks?",
+      "title": "Extension: design your own agent team",
+      "goal": "Design a team for your own safe example task and build it if time remains or after the workshop.",
+      "check": "Have you defined the goal, roles, handoffs and checks for your own team?",
       "url": "/en/step-9.html"
     },
     "ko": {
-      "title": "저장·내 작업에 응용하기",
-      "goal": "팀을 다시 사용할 수 있게 저장하고 자신의 작업을 위한 역할과 협력 구조를 구상합니다.",
-      "check": "팀을 다시 열 수 있나요? 내 작업의 목표·역할·전달할 정보·확인 기준을 적었나요?",
+      "title": "심화: 나만의 에이전트 팀 설계하기",
+      "goal": "나만의 안전한 예시 과제를 위한 팀을 설계하고, 시간이 남거나 워크숍 이후에 직접 만들어봅니다.",
+      "check": "내 팀의 목표·역할·전달할 정보·확인 기준을 정했나요?",
       "url": "/ko/step-9.html"
     }
   }
