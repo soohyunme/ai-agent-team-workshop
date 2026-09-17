@@ -5,12 +5,17 @@
   {% assign visible_steps = steps | where: 'id', page.step %}
   {% assign en_url = active_step.en.url %}
   {% assign ko_url = active_step.ko.url %}
+{% elsif page.help %}
+  {% assign visible_steps = steps | where: 'id', 0 %}
+  {% assign en_url = '/en/help.html' %}
+  {% assign ko_url = '/ko/help.html' %}
 {% else %}
   {% assign visible_steps = steps %}
   {% assign en_url = '/all.html' %}
   {% assign ko_url = '/ko/all.html' %}
 {% endif %}
 {% if language == 'ko' %}{% assign full_url = '/ko/all.html' %}{% else %}{% assign full_url = '/all.html' %}{% endif %}
+{% if language == 'ko' %}{% assign help_url = '/ko/help.html' %}{% else %}{% assign help_url = '/en/help.html' %}{% endif %}
 <!doctype html>
 <html lang="{{ language }}">
 <head>
@@ -40,7 +45,7 @@
           {% endfor %}
         </ol>
         <a class="help-link" href="{{ full_url | relative_url }}"{% if page.full %} aria-current="page"{% endif %}>{% if language == 'ko' %}전체 보기 · 인쇄{% else %}Full guide · Print{% endif %}</a>
-        <a class="help-link" href="{{ full_url | relative_url }}#help">{% if language == 'ko' %}문제 해결{% else %}Troubleshooting{% endif %}</a>
+        <a class="help-link" href="{{ help_url | relative_url }}"{% if page.help %} aria-current="page"{% else %} target="_blank" rel="noopener noreferrer"{% endif %}>{% if language == 'ko' %}문제 해결{% unless page.help %} (새 탭){% endunless %}{% else %}Troubleshooting{% unless page.help %} (new tab){% endunless %}{% endif %}</a>
       </nav>
     </aside>
     <main id="main" tabindex="-1">
@@ -49,6 +54,9 @@
       {% if page.full %}
       <h1>{% if language == 'ko' %}전체 실습 가이드{% else %}The complete workshop guide{% endif %}</h1>
       <p>{% if language == 'ko' %}모든 단계를 한 페이지에서 읽거나 인쇄할 수 있습니다. 단계별로 진행하려면 단계 목록에서 원하는 페이지를 선택하세요.{% else %}Read or print all steps on one page. To follow the exercise one step at a time, choose a page from the step list.{% endif %}</p>
+      {% elsif page.help %}
+      <h1>{% if language == 'ko' %}문제 해결{% else %}Troubleshooting{% endif %}</h1>
+      <p>{% if language == 'ko' %}가이드에서 새 탭으로 열었다면, 확인 후 이 탭을 닫아 진행 중이던 단계로 돌아가세요. 왼쪽 단계 목록에서 원하는 페이지로 이동할 수도 있습니다.{% else %}If you opened this in a new tab from the guide, close this tab when finished to return to your current step. You can also choose a page from the step list.{% endif %}</p>
       {% else %}
       <p class="step-progress">{% if language == 'ko' %}{{ steps.size }}단계 중 {{ page.step }}단계{% else %}Step {{ page.step }} of {{ steps.size }}{% endif %}</p>
       {% endif %}
@@ -64,7 +72,8 @@
             <div class="completion"><strong>{% if item.id == steps.size %}{% if language == 'ko' %}선택 활동 확인{% else %}Optional activity check{% endif %}{% else %}{% if language == 'ko' %}다음 단계로 가기 전에{% else %}Check before continuing{% endif %}{% endif %}</strong><p>{{ info.check }}</p></div>
           </section>
         {% endfor %}
-        {% if page.full %}
+        {% if page.full or page.help %}
+          {% if page.full %}<h2 id="help">{% if language == 'ko' %}문제 해결{% else %}Troubleshooting{% endif %}</h2>{% endif %}
           {% capture help_file %}steps/{{ language }}/help.md{% endcapture %}
           {% capture help_body %}{% include {{ help_file }} %}{% endcapture %}
           {{ help_body | markdownify }}

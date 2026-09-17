@@ -1,5 +1,3 @@
-<h2 id="help">Troubleshooting</h2>
-
 | Situation | What to check |
 | --- | --- |
 | Verification email has not arrived | Check the email address you entered and your spam or junk folder. |
