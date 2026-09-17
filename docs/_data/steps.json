@@ -109,13 +109,13 @@
     "en": {
       "title": "Improve and test the result",
       "goal": "Change one role's request, compare the new result, and optionally test a more challenging complaint.",
-      "check": "Is the reply under 90 words with both concerns included? Can you explain what you changed and what you checked?",
+      "check": "Is the reply under 90 words with every concern included? Can you explain what you changed and what you checked?",
       "url": "/en/step-8.html"
     },
     "ko": {
       "title": "결과 개선·시험하기",
       "goal": "한 역할의 요청을 수정해 결과를 비교하고, 선택 활동으로 더 까다로운 컴플레인을 시험합니다.",
-      "check": "답변이 두 불편 사항을 포함하면서 영어 90단어 미만인가요? 무엇을 바꾸고 어떤 결과를 확인했는지 설명할 수 있나요?",
+      "check": "답변이 원문의 모든 불편 사항을 포함하면서 영어 90단어 미만인가요? 무엇을 바꾸고 어떤 결과를 확인했는지 설명할 수 있나요?",
       "url": "/ko/step-8.html"
     }
   },
