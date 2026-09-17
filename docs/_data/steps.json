@@ -34,13 +34,13 @@
     "en": {
       "title": "Sim: sign up & connect your key",
       "goal": "Let your Sim workspace use your OpenRouter key.",
-      "check": "Is OPENROUTER_API_KEY saved in Secrets in the workspace for this exercise?",
+      "check": "Is OPENROUTER_API_KEY saved in your Personal Secrets for this exercise?",
       "url": "/en/step-3.html"
     },
     "ko": {
       "title": "Sim 가입·키 연결",
       "goal": "Sim 작업 공간에서 내 OpenRouter 키를 사용할 수 있게 연결합니다.",
-      "check": "실습할 작업 공간의 Secrets에 OPENROUTER_API_KEY가 저장돼 있나요?",
+      "check": "Personal Secrets에 OPENROUTER_API_KEY가 저장돼 있나요?",
       "url": "/ko/step-3.html"
     }
   },

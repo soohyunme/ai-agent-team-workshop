@@ -4,7 +4,7 @@
 | --- | --- |
 | Verification email has not arrived | Check the email address you entered and your spam or junk folder. |
 | A menu or result is difficult to find | Tell the facilitator your current step and the screen you see. |
-| An API key or authentication error appears | Check that `OPENROUTER_API_KEY` is saved in Secrets in the workspace used for this exercise. |
+| An API key or authentication error appears | Check that `OPENROUTER_API_KEY` is saved in your Personal Secrets. |
 | `429 Provider returned error` appears | Avoid repeated runs and contact the facilitator. This may be a usage limit or a temporary service restriction. |
 | A payment or upgrade request appears | Contact the facilitator before making a purchase. |
 | AI reports that input information is missing | Check that review in Start contains a value. |
