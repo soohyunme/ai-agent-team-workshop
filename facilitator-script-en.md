@@ -378,6 +378,14 @@ Keep the four questions visible and give participants three minutes to write.
 
 > “Today, we practiced three things: dividing work into roles, passing information, and combining and checking results. Sim was our tool for trying this. You can apply the same ideas with other tools.”
 >
+> “The short prompts we used today are only a starting point. In real work, people already have valuable knowledge and experience: what to check, how to judge a situation, when to escalate it and how to communicate.”
+>
+> “Knowledge gained through experience but difficult to express is often called tacit knowledge. In knowledge management, expressing it in a form that others can use is called externalization. Here, that means turning know-how into clear guidance, not simply converting it into numbers or automatically training a model.”
+>
+> “You can organize that know-how as instructions, examples, checklists or reference documents, and give each agent the parts relevant to its role. As experienced staff review the results and refine those materials, a general agent can become better suited to the way your team works.”
+>
+> “More advanced tools may keep this context through memory, knowledge sources or tool-specific instruction files. This usually improves the agent's instructions and context; it does not automatically retrain the AI model. Use reviewed knowledge, exclude personal customer data and keep a person responsible for the final result.”
+>
 > “Not every task needs several agents. Start with one AI for a simple task. When you have a reason to divide the work, use today's structure as a starting point.”
 
 Closing checks:
@@ -385,6 +393,7 @@ Closing checks:
 - “Why did we separate review analysis from operational proposals?”
 - “What information did the reply writer receive?”
 - “What roles and connections would your own task need?”
+- “What human know-how would make each role more useful?”
 
 Only if extra support has been confirmed:
 

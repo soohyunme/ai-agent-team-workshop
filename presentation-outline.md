@@ -2,7 +2,7 @@
 
 영어 발표용 · 한국어 진행 메모 · 2026-09-17
 
-본문 11장 + 프롬프트 참고 3장입니다. 실제 PPT 파일이 아닌 슬라이드 제작용 구성안입니다.
+본문 12장 + 프롬프트 참고 3장입니다. 실제 PPT 파일이 아닌 슬라이드 제작용 구성안입니다.
 영어 진행 대본: [facilitator-script-en.md](facilitator-script-en.md)
 한국어 참고 대본: [facilitator-script-ko.md](facilitator-script-ko.md)
 
@@ -23,7 +23,7 @@
 | 14:05–14:12 | 7: 기본 워크플로 실행·결과 확인 |
 | 14:12–14:20 | 8–9: Part 2·결과 개선·비교 |
 | 14:20–14:25 | 10: 저장·나의 작업 설계 |
-| 14:25–14:30 | 11: 정리·질문·버퍼 |
+| 14:25–14:30 | 11–12: 사람의 노하우를 에이전트에 반영하는 확장 방향·정리 |
 
 ---
 
@@ -263,7 +263,36 @@ Example: summarize materials → outline a presentation → check the evidence.
 
 ---
 
-## 11. Three Ideas to Take Away
+## 11. From Tacit Know-how to Role-Specific Agents
+### 화면 문구
+
+**People hold valuable know-how.**
+
+Make it explicit:
+
+- Judgement rules and exceptions
+- Examples of good responses
+- Checklists and reference documents
+
+Give each agent what its role needs.
+
+**Review → refine → reuse**
+
+### 진행 메모
+
+- 지식경영에서는 경험을 통해 체득했지만 말이나 문서로 표현하기 어려운 지식을 **tacit knowledge(암묵지)**라고 합니다.
+- 암묵지를 공유 가능한 개념이나 문서로 표현하는 과정은 **externalization(외재화·명시지화)**으로 설명할 수 있습니다.
+- ‘데이터화’라고만 표현하면 숫자 데이터나 모델 학습용 데이터셋으로 오해할 수 있습니다. 판단 기준·예외·사례·체크리스트·참고 문서처럼 **에이전트가 참고할 수 있는 명시적 지식으로 구조화한다**고 설명합니다.
+- 호텔 사례: 체크인 지연 시 먼저 확인할 내용, 상급자에게 전달할 조건, 임의로 약속하면 안 되는 사항, 호텔다운 답변의 좋은 예시.
+- 역할마다 필요한 지식이 다릅니다. 분석 담당에는 중요한 신호와 분류 기준, 운영 담당에는 확인 절차와 escalation 기준, 소통 담당에는 커뮤니케이션 원칙과 승인된 예시를 제공합니다.
+- 메모리·지식 자료·도구별 지침 파일은 고급 구현 사례로만 언급합니다. 모델 자체를 자동으로 재학습하는 것과 에이전트의 지시·맥락을 발전시키는 것을 구분합니다.
+- 검토된 지식만 사용하고 고객 개인정보는 제외하며 최종 판단은 사람이 맡는다고 설명합니다.
+- 개념 근거: [Nonaka (1994), A Dynamic Theory of Organizational Knowledge Creation](https://doi.org/10.1287/orsc.5.1.14)
+- 호텔 분야 연결: [Hallin & Marnburg (2008), Knowledge management in the hospitality industry](https://doi.org/10.1016/j.tourman.2007.02.019)
+
+---
+
+## 12. Three Ideas to Take Away
 ### 화면 문구
 
 **Divide the work.**
@@ -352,4 +381,3 @@ Proposals:
 
 Draft the guest reply.
 ```
-
